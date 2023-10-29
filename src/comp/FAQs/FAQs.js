@@ -20,7 +20,7 @@ const FaqsCard = (props) => {
             key={idx}
             onClick={handleOpenAnswer}
         >
-            <h4 className="cursor-pointer pb-5 flex items-center justify-between text-lg text-gray-700 font-medium">
+            <h4 className="cursor-pointer pb-5 flex items-center justify-between text-lg text-red-400 font-medium">
                 {faqsList.q}
                 {
                     state ? (
@@ -35,11 +35,11 @@ const FaqsCard = (props) => {
                 }
             </h4>
             <div
-                ref={answerElRef} className="duration-300"
+                ref={answerElRef} className="duration-100"
                 style={state ? {height: answerH } : {height: '0px'}}
             >
                 <div>
-                    <p className="text-gray-500">
+                    <p className="text-white">
                         {faqsList.a}
                     </p>
                 </div>
