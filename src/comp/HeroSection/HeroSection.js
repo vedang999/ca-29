@@ -35,9 +35,9 @@
 
 // export default HeroSection;
 // HeroSection.js
-// import React from 'react';
+import React from 'react';
 import './h.css';
-import React, { useEffect } from 'react';
+// import React, { useEffect } from 'react';
 import AxisLogo from './Axis.png'; // Path to the image file
 
 const HeroSection = () => {
