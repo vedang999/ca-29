@@ -1,6 +1,5 @@
-
-import './h.css';
 import React from 'react';
+import './h.css';
 import AxisLogo from './Axis.png'; // Path to the image file
 
 const HeroSection = () => {
