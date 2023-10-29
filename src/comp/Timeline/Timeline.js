@@ -6,7 +6,7 @@ const Timeline = () => {
     <div className="relative font-inter antialiased">
       <main className="relative min-h-screen flex flex-col justify-center overflow-hidden">
         <div className="flex items-center justify-center mt-9">
-          <p className="text-7xl font-caveat font-bold">Timeline</p>
+          <p className="text-7xl text-fuchsia-800 font-caveat font-bold">Timeline</p>
         </div>
         <div className="w-full max-w-6xl mx-auto px-4 md:px-4 py-4">
           <div className="flex flex-col justify-center divide-y divide-slate-200 ">

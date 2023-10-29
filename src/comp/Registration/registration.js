@@ -1,6 +1,6 @@
 import "./regi.css";
 import AxisLogo from "./Axis.png";
-import React, { useEffect } from 'react';
+import React from 'react';
 
 export default () => {
 

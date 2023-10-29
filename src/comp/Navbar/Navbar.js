@@ -4,7 +4,7 @@ import AxisLogo from './Axis.png'; // Path to the image file
 
 const Navbar = () => {
   return (
-    <div className="fixed w-full z-50 bg-black">
+    <div className="overflow-x-hidden relative w-full bg-black bg-cover bg-center">
       <div className="w-[1080px] mx-auto flex items-center justify-between py-3">
         <a href="/" className="cursor-pointer">
           <img src={AxisLogo} width="125px" height="30px" alt="Axis Logo" />
@@ -27,7 +27,7 @@ const Navbar = () => {
             <a href="/">Timeline</a>
           </li>
           <li>
-            <a href="/">Contact us!</a>
+            <a href="/">Team</a>
           </li>
         </ul>
 
