@@ -7,30 +7,30 @@ import AxisLogo from './Axis.png'; // Path to the image file
 
 const DefaultNavbar = () => {
   return (
-    <div className="overflow-x-hidden relative w-full bg-black bg-cover bg-center">
-      <div className="w-[1080px] mx-auto flex items-center justify-between py-3">
+    <div id="nv"  className="overflow-x-hidden relative w-full bg-black bg-cover bg-center">
+      <div className="w-[1080px] mx-auto flex items-center justify-between py-3 ">
         <a href="/" className="cursor-pointer">
           <img loading="lazy" src={AxisLogo} width="125px" height="30px" alt="Axis Logo" />
         </a>
 
         <ul className="flex space-x-6 text-white font-mullish font-medium">
           <li>
-          <HashLink smooth to="#abam">About</HashLink>
-          </li>
-          <li>
             <HashLink smooth to="#whats">What's in it?</HashLink>
           </li>
-          {/* <li>
-            <Link smooth to="#respo">Responsibilities</Link>
-          </li>
           <li>
-            <Link smooth to="#incentives">Incentives</Link>
-          </li> */}
+            <HashLink smooth to="#respo">Responsibilities</HashLink>
+          </li>
           <li>
             <HashLink smooth to="#timeline">Timeline</HashLink>
           </li>
           <li>
             <HashLink smooth to="#faqs">FAQs</HashLink>
+          </li>
+          <li>
+          <HashLink smooth to="#abam">About</HashLink>
+          </li>
+          <li>
+            <HashLink smooth to="#teams">Teams</HashLink>
           </li>
           <li>
             <HashLink smooth to="#contact">Contact us!</HashLink>
@@ -47,12 +47,14 @@ const DefaultNavbar = () => {
           </a>
         </div>
       </div>
+      
     </div>
+      
   );
 };
 const SimplifiedNavbar = () => {
   return (
-    <div className="overflow-x-hidden relative w-full bg-black bg-cover bg-center">
+    <div  id="nv" className="overflow-x-hidden relative w-full bg-black bg-cover bg-center">
       <div className="w-[1080px] mx-auto flex items-center justify-between py-3">
         <a href="/" className="cursor-pointer flex space-x-6">
           <img loading="lazy" src={AxisLogo} width="125px" height="30px" alt="Axis Logo" />

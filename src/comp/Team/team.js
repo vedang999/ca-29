@@ -3,7 +3,7 @@ import React from 'react';
 
 const team = () => {
   return (
-    <div>
+    <div id="teams">
       <section class=" text-white">
     <div class="container px-6 py-10 mx-auto">
         <h1 class="text-2xl font-semibold text-center text-gray-800 capitalize lg:text-3xl dark:text-white">Our Executive Team</h1>

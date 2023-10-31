@@ -46,7 +46,7 @@ const responsibilities = [
 
 const ResponsibilitiesSection = () => {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br bg-opacity-80">
+    <div id="respo" className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br bg-opacity-80">
       <h1 className="text-4xl font-bold text-white my-10">Responsibilities of CA</h1>
       <div className="grid grid-cols-3 gap-8">
         {responsibilities.map((responsibility, index) => (
