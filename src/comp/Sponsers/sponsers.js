@@ -1,8 +1,10 @@
+import './sponsers.css';
+
 const MyComponent = () => {
     return (
-      <div className="py-14">
+      <div className="aaa py-14">
         <div className="max-w-screen-xl mx-auto px-4 md:px-8">
-          <h3 className="font-semibold text-sm text-gray-600 text-center">
+          <h3 className="font-semibold text-sm text-white text-center">
             TRUSTED BY TEAMS FROM AROUND THE WORLD
           </h3>
           <div className="mt-6">

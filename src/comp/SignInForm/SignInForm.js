@@ -1,10 +1,9 @@
 import './Si.css';
 // import AxisLogo from './Axis-black.png';
 import AxisLogo from './Axis.png';
-import React, { useEffect } from 'react';
+import React from 'react';
 
-export default () => {
-
+const SignInForm = () => {
   return (
     <div className="si-container">
       <div id="main2" className="full-screen-vanta"></div>
@@ -13,19 +12,20 @@ export default () => {
       <div className="max-w-sm w-full text-gray-600 space-y-5">
         <div className="text-center pb-1">
           <img
+          alt="College Logo"
             src={AxisLogo}
             width={220}
             className="mx-auto"
           />
           <div className="mt-2">
-            <h3 className="text-gray-800 text-2xl font-bold sm:text-3xl">
+            <h3 className="text-gray-100 text-2xl font-bold sm:text-3xl">
               Log in to your account
             </h3>
           </div>
         </div>
         <form onSubmit={(e) => e.preventDefault()} className="space-y-5">
           <div>
-            <label className="font-medium">Email</label>
+            <label className="text-gray-100 font-medium">Email</label>
             <input
               type="email"
               required
@@ -33,14 +33,14 @@ export default () => {
               />
           </div>
           <div>
-            <label className="font-medium">Password</label>
+            <label className="text-gray-100 font-medium">Password</label>
             <input
               type="password"
               required
               className="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
             />
           </div>
-          <div className="flex items-center justify-between text-sm">
+          <div className="text-gray-100 flex items-center justify-between text-sm">
             <div className="flex items-center gap-x-3">
               <input
                 type="checkbox"
@@ -54,7 +54,7 @@ export default () => {
               <span>Remember me</span>
             </div>
             <a
-              href="javascript:void(0)"
+              href="/valid-url"
               className="text-center text-indigo-600 hover:text-indigo-500"
               >
               Forgot password?
@@ -64,7 +64,7 @@ export default () => {
             Sign in
           </button>
         </form>
-        <button className="w-full flex items-center justify-center gap-x-3 py-2.5 border rounded-lg text-sm font-medium hover:bg-gray-50 duration-150 active:bg-gray-100">
+        <button className="text-gray-400 w-full flex items-center justify-center gap-x-3 py-2.5 border rounded-lg text-sm font-medium hover:bg-gray-50 duration-150 active:bg-gray-100">
           <svg
             className="w-5 h-5"
             viewBox="0 0 48 48"
@@ -97,10 +97,10 @@ export default () => {
           </svg>
           Continue with Google
         </button>
-        <p className="text-center">
+        <p className="text-gray-100 text-center">
           Don't have an account?{" "}
           <a
-            href="javascript:void(0)"
+            href="/valid-url"
             className="font-medium text-indigo-600 hover:text-indigo-500"
             >
             Sign up
@@ -111,4 +111,11 @@ export default () => {
     </div>
     </div>
   );
+  // Your component code here
 };
+
+export default SignInForm;
+
+// export default () => {
+
+// };

@@ -20,15 +20,15 @@ const FaqsCard = (props) => {
             key={idx}
             onClick={handleOpenAnswer}
         >
-            <h4 className="cursor-pointer pb-5 flex items-center justify-between text-lg text-gray-700 font-medium">
+            <h4 className="cursor-pointer pb-5 flex items-center justify-between text-lg text-white font-medium">
                 {faqsList.q}
                 {
                     state ? (
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-gray-500 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-white ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4" />
                         </svg>
                     ) : (
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-gray-500 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-white ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
                         </svg>
                     )
@@ -39,7 +39,7 @@ const FaqsCard = (props) => {
                 style={state ? {height: answerH } : {height: '0px'}}
             >
                 <div>
-                    <p className="text-gray-500">
+                    <p className="text-gray-300">
                         {faqsList.a}
                     </p>
                 </div>
@@ -48,8 +48,8 @@ const FaqsCard = (props) => {
     )
 }
 
-export default () => {
-
+const FAQs = () => {
+    // Your component code here
     const faqsList = [
         {
             q: "What are some random questions to ask?",
@@ -74,12 +74,12 @@ export default () => {
     ]
   
     return (
-        <section className="faq-card-container leading-relaxed max-w-screen-xl mt-12 mx-auto px-4 md:px-8">
+        <section  id="faqs" className="faq-card-container leading-relaxed max-w-screen-xl mt-12 mx-auto px-4 md:px-8">
             <div className="space-y-3 text-center">
-                <h1 className="text-3xl text-white font-semibold">
+                <h1 className="text-3xl text-white font-semibold underline">
                     Frequently Asked Questions
                 </h1>
-                <p className="text-gray-600 max-w-lg mx-auto text-lg">
+                <p className="text-white max-w-lg mx-auto text-lg">
                     Answered all frequently asked questions, Still confused? feel free to contact us.
                 </p>
             </div>
@@ -95,4 +95,10 @@ export default () => {
             </div>
         </section>
     )
-}
+  };
+  
+  export default FAQs;
+  
+// export default () => {
+
+// }

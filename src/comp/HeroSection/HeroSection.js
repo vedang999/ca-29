@@ -90,7 +90,7 @@ const HeroSection = () => {
       <section className="relative">
         <div className="w-10/12 max-w-[1080px] flex sm:flex-col lg:flex-row justify-between items-center mx-auto ">
           <div className="space-y-8">
-            <h1 className="font-mullish font-bold text-[40px] leading-[1.2] text-white">Campus Ambassador Program</h1>
+            <h1 className="font-mullish font-bold text-[40px] leading-[1.2] text-pink-600 underline">Campus Ambassador Program</h1>
             <div className="w-10 h-1 bg-greenLight"></div>
             <p className="font-bold text-[18px] leading-7 text-white opacity-70">
               Be our mascot for Axis, the largest technical fest by VNIT NAGPUR in your college and city, by joining
@@ -104,8 +104,10 @@ const HeroSection = () => {
             </p>
             {/* <button className="bg-lightBlue text-white  py-[14px] px-[18px] rounded-md font-mullish font-bold
     hover:bg-lightBlue500 transition-all duration-200">Register Now!</button> */}
-    <button className =" bg-red-600 text-white  py-[14px] px-[18px] rounded-md font-mullish font-bold
-         hover:bg-emerald-500 transition-all duration-200">Register Now!</button>
+    <a href="/signup">
+    <button href="/signup" className ="underline bg-red-600 text-white py-3 px-4 rounded-md font-mullish font-bold transition-all duration-200 hover:bg-green-900">Register Now!</button>
+         </a>
+         
           </div>
           {/* right part */}
           <img src={AxisLogo} alt="" className="float-right w-1/2" />

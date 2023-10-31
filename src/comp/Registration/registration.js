@@ -1,19 +1,20 @@
 import "./regi.css";
 import AxisLogo from "./Axis.png";
-import React, { useEffect } from 'react';
+import React from 'react';
 
-export default () => {
-
+const Registration = () => {
+  // Your component code here
   return (
+    
     <div className="reg-container">
     <div id="main1" className="full-screen-vanta"></div>
     <div className="content-container">
-
-
+  
+  
     <main className="relative py-28">
       <div className="relative z-10 max-w-screen-xl mx-auto text-gray-600 sm:px-4 md:px-8">
         <div className="max-w-lg space-y-3 px-4 sm:mx-auto sm:text-center sm:px-0">
-          <img src={AxisLogo} width={300} className="mx-auto" />
+          <img src={AxisLogo} width={300} alt="" className="mx-auto" />
           
           <p className="text-white text-3xl font-semibold sm:text-4xl">
             Get in touch
@@ -23,7 +24,7 @@ export default () => {
           </p>
         </div>
         <div className="mt-12 mx-auto px-4 p-8 bg-white sm:max-w-lg sm:px-8 sm:rounded-xl">
-
+  
           <form onSubmit={(e) => e.preventDefault()} className="space-y-5">
             <div>
               <label className="font-medium">Full name</label>
@@ -34,7 +35,7 @@ export default () => {
                 className="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-gray-800 shadow-sm rounded-lg"
                 />
             </div>
-
+  
             <div>
               <label className="font-medium">Email Address</label>
               <input
@@ -44,7 +45,7 @@ export default () => {
                 className="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-gray-800 shadow-sm rounded-lg"
                 />
             </div>
-
+  
             <div>
               <label className="font-medium">Phone number</label>
               <div className="relative mt-2">
@@ -61,7 +62,7 @@ export default () => {
                   />
               </div>
             </div>
-
+  
             <div>
               <label className="font-medium">University/Institution</label>
               <input
@@ -70,7 +71,7 @@ export default () => {
                 className="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-gray-800 shadow-sm rounded-lg"
                 />
             </div>
-
+  
             <div>
               <label className="font-medium">Major/Field of Study</label>
               <input
@@ -79,7 +80,7 @@ export default () => {
                 className="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-gray-800 shadow-sm rounded-lg"
                 />
             </div>
-
+  
             <div>
               <label className="font-medium">Year of Study</label>
               <input
@@ -88,7 +89,7 @@ export default () => {
                 className="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-gray-800 shadow-sm rounded-lg"
                 />
             </div>
-
+  
             <div>
               <label className="font-medium">LinkedIN Profile (Optional)
               </label>
@@ -98,7 +99,7 @@ export default () => {
                 className="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-gray-800 shadow-sm rounded-lg"
                 />
             </div>
-
+  
             <div>
               <label className="font-medium">Releavant Experience 
               </label>
@@ -108,7 +109,7 @@ export default () => {
                 className="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-gray-800 shadow-sm rounded-lg"
                 />
             </div>
-
+  
             <div>
               <label className="font-medium">Skills/Qualities
               </label>
@@ -118,7 +119,7 @@ export default () => {
                 className="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-gray-800 shadow-sm rounded-lg"
                 />
             </div>
-
+  
             <div>
               <label className="font-medium">Reference
               </label>
@@ -128,7 +129,7 @@ export default () => {
                 className="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-gray-800 shadow-sm rounded-lg"
                 />
             </div>
-
+  
             <div>
               <label className="font-medium">Resume/CV (Optional)
               </label>
@@ -155,7 +156,7 @@ export default () => {
       <div
         className="absolute inset-0 blur-[118px] max-w-lg h-[800px] mx-auto sm:max-w-3xl sm:h-[400px]"
         style={{
-          background: "none", // Set the background to 'none' or remove the property
+          background: "none",
         }}
         ></div>
     </main>
@@ -163,3 +164,9 @@ export default () => {
         </div>
   );
 };
+
+export default Registration;
+
+// export default () => {
+
+// };
