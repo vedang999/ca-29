@@ -11,7 +11,8 @@ import FAQs from '../FAQs/FAQs';
 import Timeline from '../Timeline/Timeline';
 import Respo from '../Respo/Respo';
 import CountUpAnimation from '../Count/Count'
-
+import Team from '../Team/team';
+import Responsibilites from '../Responsibilities/res';
 const Home = () => {
 
 
@@ -21,11 +22,13 @@ const Home = () => {
       <div className="content-container">
         <HeroSection />
         <CountUpAnimation />
-        <Abam  />
         <Respo  />
+        <Responsibilites/>
         <Timeline  />
         <FAQs />
         <Sponsers />
+        <Abam  />
+        <Team/>
       </div>
     </div>
   );
