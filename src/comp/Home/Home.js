@@ -17,11 +17,9 @@ const Home = () => {
 
 
   return (
-    <div className="home-container">
+    <div className=" home-container">
       <div id="main" className="full-screen-vanta"></div>
       <div className="content-container">
-        <br/>
-        <br/>
         <HeroSection />
         <CountUpAnimation />
         <Respo  />
@@ -30,7 +28,7 @@ const Home = () => {
         <FAQs />
         <Sponsers />
         <Abam  />
-        <Team/>
+        {/* <Team/> */}
       </div>
     </div>
   );

@@ -15,15 +15,15 @@ const CountUpAnimation = ({ title, target }) => {
 
   return (
     <div className="aa-card-container text-center mt-8">
-      <h2 className="text-2xl font-bold text-white mb-4">{title}</h2>
-      <div className="text-3xl font-bold" style={{ color: '#e6496d' }}>{count}+</div>
+      <h2 className="lg:text-[28px] text-[16px] font-bold text-white mb-4">{title}</h2>
+      <div className="lg:text-[28px] text-[16px] font-bold" style={{ color: '#e6496d' }}>{count}+</div>
     </div>
   );
 };
 
 const CountUpGroup = () => {
   return (
-    <div className="flex justify-evenly mt-8">
+    <div className="flex flex-col lg:flex-row justify-evenly">
       <CountUpAnimation title="COLLEGE AMBASSADORS" target={2563} />
       <CountUpAnimation title="INDIAN COLLEGES" target={1464} />
       <CountUpAnimation title="INTERNATIONAL COLLEGES" target={768} />

@@ -16,11 +16,11 @@ const FaqsCard = (props) => {
 
     return (
         <div 
-            className="space-y-3 mt-5 overflow-hidden border-b"
+            className="space-y-3 lg:mt-8 overflow-hidden border-b"
             key={idx}
             onClick={handleOpenAnswer}
         >
-            <h4 className="cursor-pointer pb-5 flex items-center justify-between text-lg text-white font-medium">
+            <h4 className="lg:text-[16px] text-[15px] cursor-pointer lg:pb-5 pb-2  flex items-center justify-between text-lg text-white font-medium">
                 {faqsList.q}
                 {
                     state ? (
@@ -76,7 +76,7 @@ const FAQs = () => {
     return (
         <section  id="faqs" className="faq-card-container leading-relaxed max-w-screen-xl mt-12 mx-auto px-4 md:px-8">
             <div className="space-y-3 text-center">
-                <h1 className="text-3xl text-white font-semibold underline">
+                <h1 className="lg:text-[35px] text-[25px] text-white font-semibold underline">
                     Frequently Asked Questions
                 </h1>
                 <p className="text-white max-w-lg mx-auto text-lg">

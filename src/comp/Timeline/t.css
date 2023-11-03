@@ -3,11 +3,11 @@
     -webkit-backdrop-filter: blur(1px);
     backdrop-filter: blur(2px);
     border: 1px solid rgba(255,255,255,0);
-      padding: 20px; /* Adjust the padding as needed */
+      padding: 0px; /* Adjust the padding as needed */
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
-      margin: 20px auto; /* Adjust the margin as needed */
+      margin: 10px auto; /* Adjust the margin as needed */
       max-width: 600px;
   }

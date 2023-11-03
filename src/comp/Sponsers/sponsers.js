@@ -8,6 +8,7 @@ const MyComponent = () => {
             TRUSTED BY TEAMS FROM AROUND THE WORLD
           </h3>
           <div className="mt-6">
+            
             <ul className="flex gap-y-6 flex-wrap items-center justify-center [&>*]:px-12 lg:divide-x">
               {/* LOGO 1 */}
               <li className="flex-none">
@@ -15,8 +16,8 @@ const MyComponent = () => {
                   xmlns="http://www.w3.org/2000/svg"
                   x="0px"
                   y="0px"
-                  width="100"
-                  height="100"
+                  width="50"
+                  height="50"
                   viewBox="0 0 48 48"
                 >
                   <path
@@ -36,8 +37,8 @@ const MyComponent = () => {
                   xmlns="http://www.w3.org/2000/svg"
                   x="0px"
                   y="0px"
-                  width="100"
-                  height="100"
+                  width="50"
+                  height="50"
                   viewBox="0 0 48 48"
                 >
                   <path
@@ -65,8 +66,8 @@ const MyComponent = () => {
                   xmlns="http://www.w3.org/2000/svg"
                   x="0px"
                   y="0px"
-                  width="100"
-                  height="100"
+                  width="50"
+                  height="50"
                   viewBox="0 0 64 64"
                 >
                   <linearGradient
@@ -110,8 +111,8 @@ const MyComponent = () => {
                   xmlns="http://www.w3.org/2000/svg"
                   x="0px"
                   y="0px"
-                  width="100"
-                  height="100"
+                  width="50"
+                  height="50"
                   viewBox="0 0 48 48"
                 >
                   <path

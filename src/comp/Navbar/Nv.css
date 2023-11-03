@@ -1,7 +1,7 @@
-#nv {
+/* #nv {
   position: fixed;
   top: 0;
-  width: calc(100% - 17px); /* Adjust the width to account for the scrollbar width */
+  width: calc(100% - 17px);
   z-index: 1000;
   overflow-x: hidden;
-}
+} */
