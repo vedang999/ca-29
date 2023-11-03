@@ -10,9 +10,10 @@ const DefaultNavbar = () => {
 
   return (
     // <nav id='nv' className="bg-black">
-    <nav className="bg-black sticky top-0 z-50">
-      <br/>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <nav className="bg-black sticky">
+      <div className="block md:hidden">
+        <br />
+      </div>      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between py-1">
           <div className="flex items-center">
             <a href="/">
@@ -170,7 +171,11 @@ const SimplifiedNavbar = () => {
 
   return (
     <nav className="bg-black sticky top-0 z-50">
-      <br/>
+      {/* <br/> */}
+      <div className="block md:hidden">
+        <br />
+      </div>
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between py-1">
           <div className="flex items-center">

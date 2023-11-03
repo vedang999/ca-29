@@ -6,7 +6,7 @@ import React from 'react';
 const SignInForm = () => {
   return (
     <div className="si-container">
-      <div id="main2" className="full-screen-vanta"></div>
+      <div id="main1" className="full-screen-vanta"></div>
       <div className="content-container">
     <main className="w-full h-screen flex flex-col items-center justify-center px-4">
       <div className="max-w-sm w-full text-gray-600 space-y-5">

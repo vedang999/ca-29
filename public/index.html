@@ -21,7 +21,7 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js" defer></script>
       <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js" defer></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js" defer></script>
-      <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.topology.min.js" defer></script>
+      <!-- <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.topology.min.js" defer></script> -->
       <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js" defer></script>
           <script>
             window.onload = function () {
@@ -40,10 +40,10 @@
               script3.async = true;
               document.body.appendChild(script3);
               
-              const script4 = document.createElement('script');
-              script4.src = 'https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.topology.min.js';
-              script4.async = true;
-              document.body.appendChild(script4);
+              // const script4 = document.createElement('script');
+              // script4.src = 'https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.topology.min.js';
+              // script4.async = true;
+              // document.body.appendChild(script4);
       
               const script5 = document.createElement('script');
               script5.src = 'https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js';
@@ -66,20 +66,20 @@
                 });
               };
               
-              script4.onload = function () {
-                window.VANTA.TOPOLOGY({
-                  el: "#main2",
-                  mouseControls: true,
-                  touchControls: true,
-                  gyroControls: false,
-                  minHeight: window.innerHeight,
-                  minWidth: window.innerWidth,
-                  scale: 1.00,
-                  scaleMobile: 1.00,
-                  color: 0xe6496d,
-                  backgroundColor: 0x11b
-                });
-              };
+              // script4.onload = function () {
+              //   window.VANTA.TOPOLOGY({
+              //     el: "#main2",
+              //     mouseControls: true,
+              //     touchControls: true,
+              //     gyroControls: false,
+              //     minHeight: window.innerHeight,
+              //     minWidth: window.innerWidth,
+              //     scale: 1.00,
+              //     scaleMobile: 1.00,
+              //     color: 0xe6496d,
+              //     backgroundColor: 0x11b
+              //   });
+              // };
               
               script5.onload = function () {
                 window.VANTA.NET({
@@ -109,17 +109,15 @@
             </script>
   </style>
       <link rel="stylesheet" type="text/css" href="loader.css">
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
           <figure id="loader" class="loader">
-            <div class="dot white"></div>
+            <!-- <div class="dot white"></div>
             <div class="dot"></div>
             <div class="dot"></div>
             <div class="dot"></div>
-            <div class="dot"></div>
+            <div class="dot"></div> -->
         </figure>
     
     <!-- Hide the root element initially -->
@@ -141,7 +139,5 @@
             };
             // AOS.init();
           </script>
-              <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-
   </body>
 </html>
