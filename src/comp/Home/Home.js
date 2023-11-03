@@ -9,6 +9,8 @@ import Timeline from '../Timeline/Timeline';
 import Respo from '../Respo/Respo';
 import Team from '../Team/team';
 import Responsibilites from '../Responsibilities/res';
+import Count from '../Count/Count';
+import Abaim from '../Ab-aim/Ab-aim'
 
 const Home = () => {
 
@@ -17,13 +19,14 @@ const Home = () => {
       <div id="main" className="full-screen-vanta"></div>
       <div className="content-container">
         <HeroSection />
+        <Abaim/>
         <Sponsers/>
-        <Responsibilites/>
-        <Team/>
+        <Count/>
         <Respo/>
-        <FAQs />
-        {/* <ReactSVG src={Illustration}  style={{ width: '300px', height: '300px' }} /> */}
+        <Responsibilites/>
         <Timeline />
+        <FAQs />
+        {/* <Team/> */}
       </div>
     </div>
   );

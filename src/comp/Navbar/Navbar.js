@@ -1,6 +1,6 @@
 import React from 'react';
 import './Nv.css';
-import AxisLogo from './Axis.png'; // Path to the image file
+import AxisLogo from './Axis.png';
 
 const Navbar = () => {
   return (
@@ -27,7 +27,7 @@ const Navbar = () => {
             <a href="/">Timeline</a>
           </li>
           <li>
-            <a href="/">Team</a>
+            <a href="/">Contact Us</a>
           </li>
         </ul>
 
@@ -40,7 +40,7 @@ const Navbar = () => {
             </svg>
           </a>
         </div>
-      </div>
+      </div>      
     </div>
   );
 };
