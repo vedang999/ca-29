@@ -1,9 +1,9 @@
 import './Si.css';
 // import AxisLogo from './Axis-black.png';
 import AxisLogo from './Axis.png';
-import React, { useEffect } from 'react';
+import React from 'react';
 
-export default () => {
+const myFunction = () => {
 
   return (
     <div className="si-container">
@@ -13,9 +13,10 @@ export default () => {
       <div className="max-w-sm w-full text-gray-600 space-y-5">
         <div className="text-center pb-1">
           <img
-            src={AxisLogo}
+            src={AxisLogo} alt='Logo'
             width={220}
             className="mx-auto"
+            
           />
           <div className="mt-2">
             <h3 className="text-gray-800 text-2xl font-bold sm:text-3xl">
@@ -56,7 +57,7 @@ export default () => {
               <span>Remember me</span>
             </div>
             <a
-              href="javascript:void(0)"
+              href="/"
               className="text-center text-indigo-600 hover:text-indigo-500"
               >
               Forgot password?
@@ -102,7 +103,7 @@ export default () => {
         <p className="text-center">
           Don't have an account?{" "}
           <a
-            href="javascript:void(0)"
+            href="/"
             className="font-medium text-indigo-600 hover:text-indigo-500"
             >
             Sign up
@@ -114,3 +115,5 @@ export default () => {
     </div>
   );
 };
+
+export default myFunction;

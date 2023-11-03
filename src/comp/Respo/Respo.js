@@ -21,7 +21,7 @@ const whats = () => {
             className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10"
             href="/"
           >
-            <img src={leader} />
+            <img src={leader} alt=""/>
             <h2 className="mt-4 text-xl font-bold text-white">Leadership</h2>
 
             <p className="mt-1 text-sm text-gray-300">
@@ -35,7 +35,7 @@ const whats = () => {
             className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10"
             href="/"
           >
-            <img src={goodies} />
+            <img src={goodies} alt="" />
 
             <h2 className="mt-4 text-xl font-bold text-white">
               E-Summit Goodies
@@ -52,7 +52,7 @@ const whats = () => {
             className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10"
             href="/"
           >
-            <img src={neto} />
+            <img src={neto} alt=""/>
 
             <h2 className="mt-4 text-xl font-bold text-white">Networking</h2>
 
@@ -67,7 +67,7 @@ const whats = () => {
             className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10"
             href="/"
           >
-            <img src={mentor} />
+            <img src={mentor} alt="" />
 
             <h2 className="mt-4 text-xl font-bold text-white">
               Guidance and Mentoring
@@ -84,7 +84,7 @@ const whats = () => {
             className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10"
             href="/"
           >
-            <img src={pass} />
+            <img src={pass} alt="" />
 
             <h2 className="mt-4 text-xl font-bold text-white">
               E-Summit'23 Passes
@@ -101,7 +101,7 @@ const whats = () => {
             className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10"
             href="/"
           >
-            <img src={certificate} />
+            <img src={certificate} alt="" />
 
             <h2 className="mt-4 text-xl font-bold text-white">Certificate</h2>
 
