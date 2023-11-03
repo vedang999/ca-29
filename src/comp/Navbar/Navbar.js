@@ -9,7 +9,9 @@ const DefaultNavbar = () => {
   const [isExpanded, setIsExpanded] = useState(false);
 
   return (
-    <nav className="bg-black">
+    // <nav id='nv' className="bg-black">
+    <nav className="bg-black sticky top-0 z-50">
+      <br/>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between py-1">
           <div className="flex items-center">
@@ -167,7 +169,8 @@ const SimplifiedNavbar = () => {
   // const [isExpanded, setIsExpanded] = useState(false);
 
   return (
-    <nav className="bg-black">
+    <nav className="bg-black sticky top-0 z-50">
+      <br/>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between py-1">
           <div className="flex items-center">
