@@ -2,7 +2,7 @@ import "./regi.css";
 import AxisLogo from "./Axis.png";
 import React from 'react';
 
-export default () => {
+const myRegi = () => {
 
   return (
     <div className="reg-container">
@@ -13,7 +13,7 @@ export default () => {
     <main className="relative py-28">
       <div className="relative z-10 max-w-screen-xl mx-auto text-gray-600 sm:px-4 md:px-8">
         <div className="max-w-lg space-y-3 px-4 sm:mx-auto sm:text-center sm:px-0">
-          <img src={AxisLogo} width={300} className="mx-auto" />
+          <img src={AxisLogo} alt="" width={300} className="mx-auto" />
           
           <p className="text-white text-3xl font-semibold sm:text-4xl">
             Get in touch
@@ -160,3 +160,5 @@ export default () => {
         </div>
   );
 };
+
+export default myRegi;
