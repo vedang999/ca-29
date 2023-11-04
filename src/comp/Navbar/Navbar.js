@@ -141,6 +141,11 @@ const DefaultNavbar = () => {
         {isExpanded && (
          <div className="md:hidden text-gray-800 bg-gray-100 p-4 rounded-lg">
          <ul className="flex flex-col mt-2">
+         <li>
+             <HashLink smooth to="#abam" className="py-2">
+               About
+             </HashLink>
+           </li>
            <li>
              <HashLink smooth to="#whats" className="py-3">
                What's in it?
@@ -159,11 +164,6 @@ const DefaultNavbar = () => {
            <li>
              <HashLink smooth to="#faqs" className="py-2">
                FAQs
-             </HashLink>
-           </li>
-           <li>
-             <HashLink smooth to="#abam" className="py-2">
-               About
              </HashLink>
            </li>
            <li>

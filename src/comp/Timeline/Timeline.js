@@ -3,7 +3,7 @@ import React from 'react';
 
 const Timeline = () => {
   return (
-    <div className="relative font-inter antialiased">
+    <div className="relative font-inter antialiased"id="timeline">
       <main className="relative min-h-screen flex flex-col justify-center overflow-hidden">
         <div className="flex items-center justify-center mt-9">
           <p className="text-7xl text-fuchsia-800 font-caveat font-bold">Timeline</p>

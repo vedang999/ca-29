@@ -10,7 +10,7 @@ const FaqsCard = ({ faq }) => {
   };
 
   return (
-    <div className="mt-5 border-b">
+    <div className="mt-5 border-b"id="faqs">
       <h4 className="cursor-pointer pb-3 flex items-center justify-between text-lg text-white font-medium" onClick={handleOpenAnswer}>
         {faq.q}
         <svg
