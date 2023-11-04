@@ -29,154 +29,155 @@ const myRegi = () => {
               >
                 <div>
                   <label className="font-medium">
-                    Full name <span className=" text-red-800">*</span>
+                   <b> Full name</b> <span className=" text-red-800">*</span>
                   </label>
                   <input
                     type="text"
                     placeholder="John Dee"
                     required
-                    className="w-full mt-2 px-3 py-2 text-black bg-transparent outline-none border focus:border-gray-900 shadow-sm rounded-lg"
+                    className="w-full mt-2 px-3 py-2 text-black active:bg-white outline-none border focus:border-gray-900 shadow-sm rounded-lg"
                   />
                 </div>
 
                 <div>
                   <label className="font-medium">
-                    Email Address <span className=" text-red-800">*</span>
+                   <b> Email Address</b> <span className=" text-red-800">*</span>
                   </label>
                   <input
                     type="email"
                     placeholder="abc@gmail.com"
                     required
-                    className="w-full mt-2 px-3 py-2 text-black bg-transparent outline-none border focus:border-gray-800 shadow-sm rounded-lg"
+                    className="w-full mt-2 px-3 py-2 text-black active:bg-white outline-none border focus:border-gray-800 shadow-sm rounded-lg"
                   />
                 </div>
 
                 <div>
                   <label className="font-medium">
-                    Phone number <span className=" text-red-800">*</span>
+                   <b> Phone number </b><span className=" text-red-800">*</span>
                   </label>
                   <div className="relative mt-2">
                     <div className="absolute inset-y-0 left-3 my-auto h-6 flex items-center border-r pr-2">
-                      <select className="text-sm bg-transparent outline-none rounded-lg h-full">
+                      <select className="text-sm text-black bg-transparent outline-none rounded-lg h-full">
                         <option>IN</option>
+                        <option>US</option>
                       </select>
                     </div>
                     <input
                       type="number"
                       placeholder="+1 (555) 000-000"
                       required
-                      className="w-full pl-[4.5rem] pr-3 py-2 appearance-none bg-transparent outline-none border focus:border-gray-800 shadow-sm rounded-lg"
+                      className="w-full pl-[4.5rem] pr-3 py-2 appearance-none active:bg-white outline-none border focus:border-gray-800 shadow-sm rounded-lg"
                     />
                   </div>
                 </div>
 
                 <div>
                   <label className="font-medium">
-                    University/Institution{" "}
+                    <b>University/Institution</b>
                     <span className=" text-red-800">*</span>
                   </label>
                   <input
                     type="text"
                     required
-                    className="w-full mt-2 px-3 py-2 text-black bg-transparent outline-none border focus:border-gray-800 shadow-sm rounded-lg"
+                    className="w-full mt-2 px-3 py-2 text-black active:bg-white outline-none border focus:border-gray-800 shadow-sm rounded-lg"
                   />
                 </div>
 
                 <div>
                   <label className="font-medium">
-                    Major/Field of Study{" "}
+                   <b> Major/Field of Study</b>
                     <span className=" text-red-800">*</span>
                   </label>
                   <input
                     type="text"
                     required
-                    className="w-full mt-2 px-3 py-2 text-black bg-transparent outline-none border focus:border-gray-800 shadow-sm rounded-lg"
+                    className="w-full mt-2 px-3 py-2 text-black active:bg-white outline-none border focus:border-gray-800 shadow-sm rounded-lg"
                   />
                 </div>
 
                 <div>
                   <label className="font-medium">
-                    Year of Study <span className=" text-red-800">*</span>
+                    <b>Year of Study</b> <span className=" text-red-800">*</span>
                   </label>
                   <input
                     type="number"
                     required
-                    className="w-full mt-2 px-3 py-2 text-black bg-transparent outline-none border focus:border-gray-800 shadow-sm rounded-lg"
+                    className="w-full mt-2 px-3 py-2 text-black active:bg-white outline-none border focus:border-gray-800 shadow-sm rounded-lg"
                   />
                 </div>
 
                 <div>
                   <label className="font-medium">
-                    LinkedIN Profile (Optional)
+                   <b>LinkedIN Profile (Optional)</b> 
                   </label>
                   <input
                     type="link"
                     required
-                    className="w-full mt-2 px-3 py-2 text-black bg-transparent outline-none border focus:border-gray-800 shadow-sm rounded-lg"
+                    className="w-full mt-2 px-3 py-2 text-black active:bg-white outline-none border focus:border-gray-800 shadow-sm rounded-lg"
                   />
                 </div>
 
                 <div>
                   <label className="font-medium">
-                    Do you hold any post in college? If yes then Mention.{" "}
+                   <b>Do you hold any post in college? If yes then Mention.</b> 
                     <span className=" text-red-800">*</span>
                   </label>
                   <input
                     type="text"
                     required
-                    className="w-full mt-2 px-3 py-2 text-black bg-transparent outline-none border focus:border-gray-800 shadow-sm rounded-lg"
+                    className="w-full mt-2 px-3 py-2 text-black active:bg-white outline-none border focus:border-gray-800 shadow-sm rounded-lg"
                   />
                 </div>
 
                 <div>
                   <label className="font-medium">
-                    Address of your residence where you can recieve courier from
-                    AXIS <span className=" text-red-800">*</span>
+                   <b>Address of your residence where you can recieve courier from
+                    AXIS </b> <span className=" text-red-800">*</span>
                   </label>
                   <textarea
                     required
-                    className="w-full mt-2 h-36 px-3 py-2 resize-none appearance-none bg-transparent outline-none border focus:border-gray-800 shadow-sm rounded-lg"
+                    className="w-full mt-2 h-36 px-3 py-2 resize-none appearance-none active:bg-white outline-none border focus:border-gray-800 shadow-sm rounded-lg"
                   ></textarea>
                 </div>
 
                 <div>
                   <label className="font-medium">
-                    Mention 3 innovative ideas to publicize AXIS'24 in your
-                    college <span className=" text-red-800">*</span>
+                   <b>Mention 3 innovative ideas to publicize AXIS'24 in your
+                    college</b>  <span className=" text-red-800">*</span>
                   </label>
                   <textarea
                     required
-                    className="w-full mt-2 h-36 px-3 py-2 resize-none appearance-none bg-transparent outline-none border focus:border-gray-800 shadow-sm rounded-lg"
+                    className="w-full mt-2 h-36 px-3 py-2 resize-none appearance-none active:bg-white outline-none border focus:border-gray-800 shadow-sm rounded-lg"
                   ></textarea>
                 </div>
 
                 <div>
                   <label className="font-medium">
-                    Why do you want to become an Campus Ambassador?{" "}
+                   <b>Why do you want to become an Campus Ambassador?</b>
                     <span className=" text-red-800">*</span>
                   </label>
                   <textarea
                     required
-                    className="w-full mt-2 h-36 px-3 py-2 resize-none appearance-none bg-transparent outline-none border focus:border-gray-800 shadow-sm rounded-lg"
+                    className="w-full mt-2 h-36 px-3 py-2 resize-none appearance-none active:bg-white outline-none border focus:border-gray-800 shadow-sm rounded-lg"
                   ></textarea>
                 </div>
 
                 <div>
-                  <label className="font-medium">Resume/CV (Optional)</label>
+                  <label className="font-medium"><b>Resume/CV (Optional)</b></label>
                   <input
                     type="file"
                     required
-                    className="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-gray-800 shadow-sm rounded-lg"
+                    className="w-full mt-2 px-3 py-2 text-gray-500 active:bg-white outline-none border focus:border-gray-800 shadow-sm rounded-lg"
                   />
                 </div>
 
                 <div>
-                  <label className="font-medium">REFERRAL CODE</label>
+                  <label className="font-medium"><b>REFERRAL CODE</b></label>
                   <input
                     type="text"
                     placeholder="ABC-456-MNP"
                     required
-                    className="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-gray-800 shadow-sm rounded-lg"
+                    className="w-full mt-2 px-3 py-2 text-gray-500 active:bg-white outline-none border focus:border-gray-800 shadow-sm rounded-lg"
                   />
                 </div>
 

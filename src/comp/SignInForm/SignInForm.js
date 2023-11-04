@@ -67,7 +67,7 @@ const myFunction = () => {
             Sign in
           </button>
         </form>
-        <button className="w-full flex items-center justify-center gap-x-3 py-2.5 border rounded-lg text-sm font-medium hover:bg-gray-50 duration-150 active:bg-white">
+        <button className="w-full flex items-center justify-center gap-x-3 py-2.5 border rounded-lg text-sm font-medium hover:bg-gray-50 duration-150  active:bg-white">
           <svg
             className="w-5 h-5"
             viewBox="0 0 48 48"
