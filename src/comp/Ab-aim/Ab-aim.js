@@ -19,7 +19,7 @@ const AboutAim = () => {
               <div className="space-y-4">
                 <h2 className="font-bold text-2xl lg:text-3xl text-center text-white">AIM</h2>
                 <div className="w-6 h-1 bg-green-500 mx-auto"></div>
-                <p className="text-lg lg:text-xl leading-6  lg:leading-7 text-white">
+                <p className="text-lg lg:text-xl leading-6 text-center lg:leading-7 text-white">
                 Our goal is to nurture future leaders with an entrepreneurial mindset and a diverse skill set, encompassing leadership, marketing, public speaking, and business development. Through free access to events and lectures by founders and CEOs, CAP fosters comprehensive personal growth.
                 </p>
               </div>

@@ -8,7 +8,7 @@ const HeroSection = () => {
       <section className="relative">
         <div className="w-full max-w-[1080px] mx-auto px-4 sm:flex sm:flex-col lg:flex-row justify-between items-center">
           <div className="space-y-6 text-center sm:text-left">
-            <h1 className="text-3xl font-serif sm:text-4xl font-bold text-[40px] text-white leading-tight">Campus Ambassador Program</h1>
+            <h1 className="text-2xl font-serif sm:text-3xl font-bold text-[40px] text-white leading-tight">Campus Ambassador Program</h1>
             <div className="w-10 h-1 bg-green-300 mx-auto sm:mx-0"></div>
             <p className="text-lg sm:text-xl text-white opacity-70">
               Be our mascot for Axis, the largest technical fest by VNIT NAGPUR in your college and city, by joining Axis's campus ambassador program.<br /><br />
