@@ -19,7 +19,7 @@ const myRegi = () => {
                 We'd love to hear from you! Please fill out the form bellow.
               </p>
             </div>
-            <div className="relative mt-12 mx-auto px-4 p-8 sm:max-w-lg sm:px-8 sm:rounded-xl">
+            <div className="relative text-gray-100 mt-12 mx-auto px-4 p-8 sm:max-w-lg sm:px-8 sm:rounded-xl">
               <div className="absolute inset-0 z-[-1]">
                 <div className=" backdrop-blur-sm h-full w-full border rounded-xl"></div>
               </div>

@@ -202,12 +202,6 @@ const SimplifiedNavbar = () => {
               />
             </a>
             <div className="hidden md:block">
-              <a
-                href="/"
-                className="hidden sm:block py-2 px-4 font-mono text-white border-lightBlue border rounded-sm text-sm font-bold"
-              >
-                HOME
-              </a>
             </div>
           </div>
 
@@ -244,12 +238,6 @@ const SimplifiedNavbar = () => {
 
           <div className="md:hidden flex items-center space-x-6">
             <div className="flex flex-row space-x-1">
-              <a
-                href="/"
-                className="block py-2 px-2 font-mono text-white border-lightBlue border rounded-sm text-sm font-bold"
-              >
-                Home
-              </a>
               <a
                 href="/signin"
                 className="block py-2 px-2 font-mono text-white border-lightBlue border rounded-sm text-sm font-bold"
