@@ -61,7 +61,7 @@ const DefaultNavbar = () => {
     </ul>
   </div>
 
-  <div className="hidden md:flex space-x-6">
+  <div className="hidden font-mullish md:flex space-x-6">
     <ul className="flex space-x-6">
       <li>
         <a
@@ -74,7 +74,7 @@ const DefaultNavbar = () => {
       <li>
         <a
           href="/signup"
-          className="py-3 px-3 md:px-5 font-mullish rounded-sm text-sm font-bold bg-white text-lightBlue300 border transition-all duration-200 hover:text-lightBlue500 flex"
+          className="py-3 px-3 md:px-5 font-serif rounded-sm text-sm font-bold bg-white text-lightBlue300 border transition-all duration-200 hover:text-lightBlue500 flex"
         >
           Sign Up
           <svg
@@ -92,7 +92,7 @@ const DefaultNavbar = () => {
     </ul>
   </div>
 
-  <div className="md:hidden flex items-center space-x-6">
+  <div className="md:hidden flex font-serif items-center space-x-6">
     <div className="flex flex-row space-x-6">
       <a
         href="/signin"
@@ -173,9 +173,7 @@ const DefaultNavbar = () => {
            </li>
          </ul>
        </div>
-       
-        
-        )}
+ )}
       </div>
     </nav>
   );

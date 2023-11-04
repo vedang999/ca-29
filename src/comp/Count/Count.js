@@ -1,20 +1,52 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import './aa.css';
 
 const CountUpAnimation = ({ title, target }) => {
   const [count, setCount] = useState(0);
+  const [resetCount, setResetCount] = useState(false);
+  const countRef = useRef(null);
 
   useEffect(() => {
-    const timer = setInterval(() => {
-      if (count < target) {
-        setCount(count + 1);
+    let currentCount = 0;
+    let timer;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting) {
+          if (resetCount) {
+            setCount(0);
+            setResetCount(false);
+          }
+          timer = setInterval(() => {
+            if (currentCount < target) {
+              setCount(currentCount + 1);
+              currentCount++;
+            } else {
+              clearInterval(timer);
+            }
+          }, 10);
+        } else {
+          setResetCount(true);
+          clearInterval(timer);
+        }
+      },
+      { threshold: 0.1 }
+    );
+
+    if (countRef.current) {
+      observer.observe(countRef.current);
+    }
+
+    return () => {
+      if (countRef.current) {
+        observer.unobserve(countRef.current);
       }
-    }, 1);
-    return () => clearInterval(timer);
-  }, [count, target]);
+      clearInterval(timer);
+    };
+  }, [target, resetCount]);
 
   return (
-    <div className="text-center mt-4 sm:mt-6">
+    <div className="text-center mt-4 sm:mt-6" ref={countRef}>
       <h2 className="text-lg sm:text-2xl font-bold text-white mb-2 sm:mb-4">{title}</h2>
       <div className="text-xl sm:text-3xl font-bold" style={{ color: '#e6496d' }}>
         {count}+
@@ -26,9 +58,9 @@ const CountUpAnimation = ({ title, target }) => {
 const CountUpGroup = () => {
   return (
     <div className="flex flex-col sm:flex-row justify-center sm:justify-evenly mt-4 sm:mt-8">
-      <CountUpAnimation title="COLLEGE AMBASSADORS" target={2563} />
-      <CountUpAnimation title="INDIAN COLLEGES" target={1464} />
-      <CountUpAnimation title="INTERNATIONAL COLLEGES" target={768} />
+      <CountUpAnimation title="COLLEGE AMBASSADORS" target={63} />
+      <CountUpAnimation title="INDIAN COLLEGES" target={64} />
+      <CountUpAnimation title="INTERNATIONAL COLLEGES" target={68} />
     </div>
   );
 };
