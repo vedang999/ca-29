@@ -19,7 +19,11 @@ const HeroSection = () => {
               Register Now!
             </button>
           </div>
-          <img src={AxisLogo} alt="Axis Logo" className="w-full sm:w-1/2 mt-8 sm:mt-0" />
+          <img
+            src={AxisLogo}
+            alt="Axis Logo"
+            className="w-full sm:w-1/2 mt-8 sm:mt-0 hidden sm:block" // Use "hidden sm:block" to hide on small screens
+          />
         </div>
       </section>
     </div>
