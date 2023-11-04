@@ -96,13 +96,13 @@ const DefaultNavbar = () => {
             <div className="flex flex-row space-x-6">
               <a
                 href="/signin"
-                className="block py-2 px-2 font-mono rounded-md text-white border-blue-500 border text-base font-bold"
+                className="block py-2 px-2 font-mullish rounded-md text-white border-blue-500 border text-base font-bold"
               >
                 Log in
               </a>
               <a
                 href="/signup"
-                className="block py-2 px-2 font-mullish rounded-md text-base font-bold bg-white text-lightBlue300 border transition-all duration-200 hover:text-lightBlue500"
+                className="block py-2 px-2 font-mullish rounded-md text-sm font-bold bg-white text-lightBlue300 border transition-all duration-200 hover:text-blue-500"
               >
                 Sign Up
               </a>
@@ -209,7 +209,7 @@ const SimplifiedNavbar = () => {
               <li>
                 <a
                   href="/signin"
-                  className="py-3 px-3 md:px-5 font-mono text-white border-blue-400  rounded-xl text-base font-bold border flex"
+                  className="py-3 px-3 md:px-5 font-mono text-white border-blue-400  rounded-xl text-sm font-bold border flex"
                 >
                   Log in
                 </a>
@@ -217,7 +217,7 @@ const SimplifiedNavbar = () => {
               <li>
                 <a
                   href="/signup"
-                  className="py-3 px-3 md:px-5 font-mullish rounded-xl text-base font-bold bg-white border flex"
+                  className="py-3 px-3 md:px-5 font-mullish rounded-xl text-sm font-bold bg-white border flex"
                 >
                   Sign Up
                   <svg
@@ -239,13 +239,13 @@ const SimplifiedNavbar = () => {
             <div className="flex flex-row space-x-1">
               <a
                 href="/signin"
-                className="block py-2 px-2 font-mono text-white border-blue-400 border rounded-md text-base font-bold"
+                className="block py-2 px-2 font-mono text-white border-blue-400 border rounded-md text-sm font-bold"
               >
                 Log in
               </a>
               <a
                 href="/signup"
-                className="block py-2 px-2 font-mullish rounded-md text-base font-bold bg-white text-lightBlue300 border transition-all duration-200 hover:text-lightBlue500"
+                className="block py-2 px-2 font-mullish rounded-md text-sm font-bold bg-white text-lightBlue300 border transition-all duration-200 hover:text-lightBlue500"
               >
                 Sign Up
               </a>
