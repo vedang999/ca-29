@@ -21,7 +21,7 @@ const myRegi = () => {
             </div>
             <div className="relative mt-12 mx-auto px-4 p-8 sm:max-w-lg sm:px-8 sm:rounded-xl">
               <div className="absolute inset-0 z-[-1]">
-                <div className="bg-gray-100 backdrop-blur-md h-full w-full rounded-xl"></div>
+                <div className=" backdrop-blur-sm h-full w-full border rounded-xl"></div>
               </div>
               <form
                 onSubmit={(e) => e.preventDefault()}
