@@ -36,24 +36,28 @@ const FaqsCard = ({ faq }) => {
 const FAQsSection = () => {
   const faqsList = [
     {
-      q: "What are some random questions to ask?",
-      a: "That's exactly the reason we created this random question generator. There are hundreds of random questions to choose from so you're able to find the perfect random question.",
+      q: "What skills can be gained through this program?",
+      a: "They can gain valuable event management and promotion experience.",
     },
     {
-      q: "Do you include common questions?",
-      a: "This generator doesn't include most common questions. The thought is that you can come up with common questions on your own so most of the questions in this generator.",
+      q: "Will all the participants receive a certificate?",
+      a: "Only the participants having minimum required points will receive the Certificate.",
     },
     {
-      q: "Can I use this for 21 questions?",
-      a: "Yes! there are two ways that you can use this question generator depending on what you're after. You can indicate that you want 21 questions generated.",
+      q: "How long can candidates apply after we start the application process?",
+      a: "Following the start of our application process, candidates will be able to submit their applications for up to three to four weeks.",
     },
     {
-      q: "Are these questions for girls or for boys?",
-      a: "The questions in this generator are gender-neutral and can be used to ask either males or females (or any other gender the person identifies with).",
+      q: "What incentives will I get from the program?",
+      a: "The incentives you will get from the program are Internship Certificate, Exciting Prizes for top performing CA, Access to the all the Workshop, Merchandise, Free goodies and hampers form the sponsor.",
     },
     {
-      q: "What do you wish you had more talent doing?",
-      a: "If you've been searching for a way to get random questions, you've landed on the correct webpage. We created the Random Question Generator to ask you as many random questions as your heart desires.",
+      q: "How many students can apply from a single college?",
+      a: "Anyone can apply and no limit of application from any particular college.",
+    },
+    {
+      q: "How many CAs are you planning to onboard this year?",
+      a: "It will depend upon how many number of applications we receive and also on the selection process..",
     },
   ];
 

@@ -48,7 +48,7 @@ const CountUpAnimation = ({ title, target }) => {
   return (
     <div className="text-center mt-4 sm:mt-6" ref={countRef}>
       <h2 className="text-lg sm:text-2xl font-bold text-white mb-2 sm:mb-4">{title}</h2>
-      <div className="text-xl sm:text-3xl font-bold" style={{ color: '#e6496d' }}>
+      <div className="text-xl sm:text-3xl font-bold" style={{ color: '#4361EE' }}>
         {count}+
       </div>
     </div>

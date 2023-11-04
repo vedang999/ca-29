@@ -11,7 +11,7 @@ const AboutAim = () => {
                 <h2 className="font-bold text-2xl lg:text-3xl text-center text-white">About Us</h2>
                 <div className="w-6 h-1 bg-green-500 mx-auto"></div>
                 <p className="text-lg lg:text-xl text-center leading-6 lg:leading-7 text-white">
-                  The Campus Ambassador Program is launched with the aim of developing an entrepreneurship culture in various colleges across the country. It is a Pan-India program for onboarding student ambassadors to not only publicize the events conducted by AXIS, VNIT Nagpur but also help them learn about entrepreneurship as a whole.
+                The AXIS'24 Campus Ambassador program is designed for students who wish to actively participate in and promote the AXIS'24 technical fest on their college campuses. The Campus Ambassador program is an excellent opportunity for students to actively engage with AXIS'24, gain valuable event management and promotion experience, and contribute to the success of the technical fest on their campus.
                 </p>
               </div>
             </div>
@@ -20,7 +20,7 @@ const AboutAim = () => {
                 <h2 className="font-bold text-2xl lg:text-3xl text-center text-white">AIM</h2>
                 <div className="w-6 h-1 bg-green-500 mx-auto"></div>
                 <p className="text-lg lg:text-xl leading-6 text-center lg:leading-7 text-white">
-                Our goal is to nurture future leaders with an entrepreneurial mindset and a diverse skill set, encompassing leadership, marketing, public speaking, and business development. Through free access to events and lectures by founders and CEOs, CAP fosters comprehensive personal growth.
+                Our College Ambassador Program seeks to ignite a passion for leadership, innovation, and community-building among students. Through mentorship, networking, and hands-on experiences, we aim to nurture tomorrow's change-makers, providing a platform for them to amplify their voices, drive positive impact, and create lasting connections. Join us in shaping the future, one ambassador at a time.
                 </p>
               </div>
             </div>

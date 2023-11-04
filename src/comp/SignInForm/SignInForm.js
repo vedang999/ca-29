@@ -10,7 +10,7 @@ const myFunction = () => {
       <div id="main2" className="full-screen-vanta"></div>
       <div className="content-container">
     <main className="w-full h-screen flex flex-col items-center justify-center px-4">
-      <div className="max-w-sm w-full text-gray-600 space-y-5">
+      <div className="max-w-sm w-full p-8 border rounded-xl text-gray-600 space-y-5">
         <div className="text-center pb-1">
           <img
             src={AxisLogo} alt='Logo'
@@ -26,21 +26,21 @@ const myFunction = () => {
         </div>
         <form onSubmit={(e) => e.preventDefault()} className="space-y-5">
           <div>
-            <label className="font-medium">Email</label>
+            <label className="font-medium text-white"><b>Email</b></label>
             <input
               type="email"
               placeholder='abc@gmail.com'
               required
-              className="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
+              className="w-full mt-2 px-3 py-2 text-white bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
               />
           </div>
           <div>
-            <label className="font-medium">Password</label>
+            <label className="font-medium text-white"><b>Password</b></label>
             <input
               type="password"
               placeholder='********'
               required
-              className="w-full mt-2 px-3 py-2 text-gray-800 bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
+              className="w-full mt-2 px-3 py-2 text-white bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
             />
           </div>
           <div className="flex items-center justify-between text-sm">
@@ -54,17 +54,17 @@ const myFunction = () => {
                 htmlFor="remember-me-checkbox"
                 className="relative flex w-5 h-5 bg-white peer-checked:bg-indigo-600 rounded-md border ring-offset-2 ring-indigo-600 duration-150 peer-active:ring cursor-pointer after:absolute after:inset-x-0 after:top-[3px] after:m-auto after:w-1.5 after:h-2.5 after:border-r-2 after:border-b-2 after:border-white after:rotate-45"
                 ></label>
-              <span>Remember me</span>
+              <span className='text-white'>Remember me</span>
             </div>
             <a
               href="/"
-              className="text-center text-indigo-600 hover:text-indigo-500"
+              className="text-center text-teal-600 hover:text-indigo-500"
               >
               Forgot password?
             </a>
           </div>
           <button className="w-full px-4 py-2 text-white font-medium bg-indigo-600 hover:bg-green-600 active:bg-indigo-600 rounded-lg duration-150">
-            Sign in
+           <b>Sign in</b> 
           </button>
         </form>
         <button className="w-full flex items-center justify-center gap-x-3 py-2.5 border rounded-lg text-sm font-medium hover:bg-gray-50 duration-150  active:bg-white">
@@ -98,15 +98,15 @@ const myFunction = () => {
               </clipPath>
             </defs>
           </svg>
-          Continue with Google
+         <b> Continue with Google</b>
         </button>
-        <p className="text-center">
-          Don't have an account?{" "}
+        <p className="text-center flex items-center justify-around text-white">
+          Don't have an account?
           <a
             href="/"
-            className="font-medium text-indigo-600 hover:text-indigo-500"
+            className="font-medium text-teal-600 hover:text-indigo-500"
             >
-            Sign up
+           <b>Sign up!</b> 
           </a>
         </p>
       </div>
