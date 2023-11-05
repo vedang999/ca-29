@@ -191,7 +191,7 @@ const myRegi = () => {
                 htmlFor="remember-me-checkbox"
                 className="relative flex w-5 h-5 bg-white peer-checked:bg-indigo-600 rounded-md border ring-offset-2 ring-indigo-600 duration-150 peer-active:ring cursor-pointer after:absolute after:inset-x-0 after:top-[3px] after:m-auto after:w-1.5 after:h-2.5 after:border-r-2 after:border-b-2 after:border-white after:rotate-45"
                 ></label>
-              <span className='text-white'>Agree <a href="/"><b><u>Terms and Conditions</u></b></a></span>
+              <span className='text-white'>I Agree to the <a href="/"><b><u>Terms and Conditions</u></b></a></span>
             </div>
                 <button className="w-full px-4 py-2 text-white font-medium bg-gray-800 hover:bg-green-700 active:bg-green-800 rounded-lg duration-150">
                   Submit

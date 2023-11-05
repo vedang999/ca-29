@@ -9,7 +9,8 @@ import Timeline from '../Timeline/Timeline';
 import Respo from '../Respo/Respo';
 import Responsibilites from '../Responsibilities/res';
 import Count from '../Count/Count';
-import Abaim from '../Ab-aim/Ab-aim'
+import Abaim from '../Ab-aim/Ab-aim';
+import Con from '../Contact/Contact';
 
 const Home = () => {
 
@@ -25,7 +26,7 @@ const Home = () => {
         <Responsibilites/>
         <Timeline />
         <FAQs />
-        {/* <Team/> */}
+        <Con/>
       </div>
     </div>
   );
