@@ -25,9 +25,7 @@ const whats = () => {
             <h2 className="mt-4 text-xl font-bold text-white">Leadership</h2>
 
             <p className="mt-1 text-sm text-gray-300">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo
-              possimus adipisci distinctio alias voluptatum blanditiis
-              laudantium.
+Be a Leader and get opportunities to conduct events in your community.
             </p>
           </a>
 
@@ -42,9 +40,7 @@ const whats = () => {
             </h2>
 
             <p className="mt-1 text-sm text-gray-300">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo
-              possimus adipisci distinctio alias voluptatum blanditiis
-              laudantium.
+            Top 5 campus ambassadors will be given E-Summit goodies.
             </p>
           </a>
 
@@ -57,9 +53,7 @@ const whats = () => {
             <h2 className="mt-4 text-xl font-bold text-white">Networking</h2>
 
             <p className="mt-1 text-sm text-gray-300">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo
-              possimus adipisci distinctio alias voluptatum blanditiis
-              laudantium.
+            CAs are from around the country, forming a diverse network.
             </p>
           </a>
 
@@ -74,9 +68,7 @@ const whats = () => {
             </h2>
 
             <p className="mt-1 text-sm text-gray-300">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo
-              possimus adipisci distinctio alias voluptatum blanditiis
-              laudantium.
+            Each CA is mentored personally by a team member from AXIS VNIT Nagpur.
             </p>
           </a>
 
@@ -91,9 +83,7 @@ const whats = () => {
             </h2>
 
             <p className="mt-1 text-sm text-gray-300">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo
-              possimus adipisci distinctio alias voluptatum blanditiis
-              laudantium.
+            Best performing CAs will get E-Summit 2024 passes and will be invited to the VNIT campus.
             </p>
           </a>
 
@@ -106,9 +96,7 @@ const whats = () => {
             <h2 className="mt-4 text-xl font-bold text-white">Certificate</h2>
 
             <p className="mt-1 text-sm text-gray-300">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo
-              possimus adipisci distinctio alias voluptatum blanditiis
-              laudantium.
+            Each ambassador would be getting certificates from AXIS VNIT Nagpur based on performance.
             </p>
           </a>
         </div>

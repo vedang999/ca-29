@@ -136,7 +136,7 @@ const myRegi = () => {
                   </label>
                   <textarea
                     required
-                    className="w-full mt-2 h-36 px-3 py-2 resize-none appearance-none active:bg-white outline-none border focus:border-gray-800 shadow-sm rounded-lg"
+                    className="w-full mt-2 h-36 px-3 text-black py-2 resize-none appearance-none active:bg-white outline-none border focus:border-gray-800 shadow-sm rounded-lg"
                   ></textarea>
                 </div>
 
@@ -147,7 +147,7 @@ const myRegi = () => {
                   </label>
                   <textarea
                     required
-                    className="w-full mt-2 h-36 px-3 py-2 resize-none appearance-none active:bg-white outline-none border focus:border-gray-800 shadow-sm rounded-lg"
+                    className="w-full mt-2 h-36 px-3 text-black py-2 resize-none appearance-none active:bg-white outline-none border focus:border-gray-800 shadow-sm rounded-lg"
                   ></textarea>
                 </div>
 
@@ -158,7 +158,7 @@ const myRegi = () => {
                   </label>
                   <textarea
                     required
-                    className="w-full mt-2 h-36 px-3 py-2 resize-none appearance-none active:bg-white outline-none border focus:border-gray-800 shadow-sm rounded-lg"
+                    className="w-full mt-2 h-36 text-black px-3 py-2 resize-none appearance-none active:bg-white outline-none border focus:border-gray-800 shadow-sm rounded-lg"
                   ></textarea>
                 </div>
 
@@ -167,7 +167,7 @@ const myRegi = () => {
                   <input
                     type="file"
                     required
-                    className="w-full mt-2 px-3 py-2 text-gray-500 active:bg-white outline-none border focus:border-gray-800 shadow-sm rounded-lg"
+                    className="w-full mt-2 px-3 py-2 text-white active:bg-white outline-none border focus:border-gray-800 shadow-sm rounded-lg"
                   />
                 </div>
 
@@ -177,10 +177,22 @@ const myRegi = () => {
                     type="text"
                     placeholder="ABC-456-MNP"
                     required
-                    className="w-full mt-2 px-3 py-2 text-gray-500 active:bg-white outline-none border focus:border-gray-800 shadow-sm rounded-lg"
+                    className="w-full mt-2 px-3 py-2 text-black active:bg-white outline-none border focus:border-gray-800 shadow-sm rounded-lg"
                   />
                 </div>
 
+                <div className="flex items-center gap-x-3">
+              <input
+                type="checkbox"
+                id="remember-me-checkbox"
+                className="checkbox-item peer hidden"
+              />
+              <label
+                htmlFor="remember-me-checkbox"
+                className="relative flex w-5 h-5 bg-white peer-checked:bg-indigo-600 rounded-md border ring-offset-2 ring-indigo-600 duration-150 peer-active:ring cursor-pointer after:absolute after:inset-x-0 after:top-[3px] after:m-auto after:w-1.5 after:h-2.5 after:border-r-2 after:border-b-2 after:border-white after:rotate-45"
+                ></label>
+              <span className='text-white'>Agree <a href="/"><b><u>Terms and Conditions</u></b></a></span>
+            </div>
                 <button className="w-full px-4 py-2 text-white font-medium bg-gray-800 hover:bg-green-700 active:bg-green-800 rounded-lg duration-150">
                   Submit
                 </button>
