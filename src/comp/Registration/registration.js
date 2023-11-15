@@ -17,8 +17,8 @@ const termsAndConditionsText = `
 const TermsAndConditionsModal = ({ onClose }) => {
   // Add your modal content here
   return (
-    <div className="modal-overlay" style={{ position: 'fixed', top: 0, left: 0, width: '100%', height: '100%', background: 'rgba(255, 255, 255, 0.9)', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-      <div className="modal" style={{ background: 'white', padding: '20px', borderRadius: '8px', maxWidth: '600px', color: 'black' }}>
+    <div className="modal-overlay" style={{ position: 'fixed', top: 0, left: 0, width: '100%', height: '100%', background: 'rgba(255, 255, 255, 0.9)', display: 'flex', justifyContent: 'center', alignItems: 'center', overflowY: 'auto' }}>
+      <div className="modal" style={{ background: 'white', padding: '20px', borderRadius: '8px', maxWidth: '80%', maxHeight: '80vh', color: 'black', overflowY: 'auto' }}>
         <button
           onClick={onClose}
           style={{ position: 'absolute', top: '10px', right: '10px', cursor: 'pointer', background: 'none', border: 'none', fontSize: '16px', color: 'red' }}
@@ -26,9 +26,7 @@ const TermsAndConditionsModal = ({ onClose }) => {
           &#x2716; {/* Unicode character for a cross mark */}
         </button>
         <p style={{ fontWeight: 'bold', marginBottom: '10px' }}>Terms and Conditions For CA</p>
-        {termsAndConditionsText.split('\n').map((item, index) => (
-          <p key={index}>{item}</p>
-        ))}
+        <div style={{ whiteSpace: 'pre-line' }}>{termsAndConditionsText}</div>
       </div>
     </div>
   );
