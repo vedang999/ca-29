@@ -1,14 +1,11 @@
-import './sponsers.css';
-
 const MyComponent = () => {
     return (
-      <div className="aaa py-14">
+      <div className="py-14">
         <div className="max-w-screen-xl mx-auto px-4 md:px-8">
-          <h3 className="font-semibold text-sm text-white text-center">
+          <h3 className="font-semibold text-sm text-gray-600 text-center">
             TRUSTED BY TEAMS FROM AROUND THE WORLD
           </h3>
           <div className="mt-6">
-            
             <ul className="flex gap-y-6 flex-wrap items-center justify-center [&>*]:px-12 lg:divide-x">
               {/* LOGO 1 */}
               <li className="flex-none">
@@ -16,8 +13,8 @@ const MyComponent = () => {
                   xmlns="http://www.w3.org/2000/svg"
                   x="0px"
                   y="0px"
-                  width="50"
-                  height="50"
+                  width="100"
+                  height="100"
                   viewBox="0 0 48 48"
                 >
                   <path
@@ -37,8 +34,8 @@ const MyComponent = () => {
                   xmlns="http://www.w3.org/2000/svg"
                   x="0px"
                   y="0px"
-                  width="50"
-                  height="50"
+                  width="100"
+                  height="100"
                   viewBox="0 0 48 48"
                 >
                   <path
@@ -66,8 +63,8 @@ const MyComponent = () => {
                   xmlns="http://www.w3.org/2000/svg"
                   x="0px"
                   y="0px"
-                  width="50"
-                  height="50"
+                  width="100"
+                  height="100"
                   viewBox="0 0 64 64"
                 >
                   <linearGradient
@@ -111,8 +108,8 @@ const MyComponent = () => {
                   xmlns="http://www.w3.org/2000/svg"
                   x="0px"
                   y="0px"
-                  width="50"
-                  height="50"
+                  width="100"
+                  height="100"
                   viewBox="0 0 48 48"
                 >
                   <path

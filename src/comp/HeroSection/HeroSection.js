@@ -1,121 +1,32 @@
-// // HeroSection.js
-// import React from 'react';
-// import './h.css';
-
-// const HeroSection = () => {
-//   return (
-//     // Your HeroSection JSX here
-//     <div class="overflow-x-hidden relative w-full bg-black bg-cover bg-center">
-//     <section className="relative">
-
-//         <div className="w-10/12 max-w-[1080px] flex sm:flex-col lg:flex-row justify-between items-center mx-auto ">
-//           <div className="space-y-8">
-//             <h1 className="font-mullish font-bold text-[40px] leading-[1.2] text-white">Campus Ambassador Program</h1>
-//             <div className="w-10 h-1 bg-greenLight"></div>
-//             <p className="font-bold text-[18px] leading-7 text-white opacity-70">
-//               Be our mascot for Axis, the largest technical fest by VNIT NAGPUR in your college and city, by joining
-//               Axis's campus ambassador program.<br />
-//               <br />
-//               Seize the opportunity of becoming our face, gaining exposure, connecting with peers on your campus, pulling
-//               off awesome events and workshops and, most importantly, prospering your professional skills.<br />
-//               <br />
-//               In the world of social media influencers, be a campus ambassador to show off your digital savviness! <br />
-//               <br />
-//             </p>
-//             <button className="bg-lightBlue text-white  py-[14px] px-[18px] rounded-md font-mullish font-bold
-//     hover:bg-lightBlue500 transition-all duration-200">Register Now!</button>
-//           </div>
-//           {/* right part */}
-//           <img src="" alt="" className="float-right w-1/2" />
-//         </div>
-//       </section>
-//     </div>
-//   );
-// };
-
-// export default HeroSection;
-// HeroSection.js
 import React from 'react';
 import './h.css';
-// import React, { useEffect } from 'react';
-import AxisLogo from './Axis.png'; // Path to the image file
+import AxisLogo from './AXISSS WHITE.png';
 
 const HeroSection = () => {
-
-  // useEffect(() => {
-  //     const script = document.createElement('script');
-  //     script.src = 'https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js';
-  //     script.async = true;
-  //     document.body.appendChild(script);
-
-  //     const loadThreeJs = new Promise((resolve, reject) => {
-  //       script.onload = () => resolve();
-  //       script.onerror = (error) => reject(error);
-  //     });
-
-  //     loadThreeJs.then(() => {
-  //       const script2 = document.createElement('script');
-  //       script2.src = 'https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js';
-  //       script2.async = true;
-  //       document.body.appendChild(script2);
-
-  //       script2.onload = () => {
-  //         window.VANTA.GLOBE({
-  //           el: "#main1",
-  //           mouseControls: true,
-  //           touchControls: true,
-  //           gyroControls: false,
-  //           minHeight: 200.00,
-  //           minWidth: 200.00,
-  //           scale: 1.00,
-  //           scaleMobile: 1.00,
-  //           color: 0xff5858,
-  //           color2: 0xff0000,
-  //           backgroundColor: 0x11b
-  //         });
-  //       };
-  //     }).catch((error) => {
-  //       console.error('Error loading Three.js:', error);
-  //     });
-
-  //     return () => {
-  //       document.body.removeChild(script);
-  //     };
-  // },[]);
-
   return (
-    // Your HeroSection JSX here
-    // <div id="main1" className="full-screen-vanta1">
-    <div class="aa-card-container overflow-x-hidden relative w-full">
+    <div className="overflow-x-hidden relative w-full">
       <section className="relative">
-        <div className="max-w-[1080px] flex sm:flex-col lg:flex-row justify-between items-center mx-auto ">
-          <div className="lg:space-y-8">
-            <h1 className="font-mullish font-bold lg:text-[40px] text-[25px] leading-[1.2] text-white">Campus Ambassador Program</h1>
-            <p className="lg:font-bold lg:text-[18px] text-[14px]  leading-7 text-white opacity-70">
-              Be our mascot for Axis, the largest technical fest by VNIT NAGPUR in your college and city, by joining
-              Axis's campus ambassador program.<br />
-              <br />
-              Seize the opportunity of becoming our face, gaining exposure, connecting with peers on your campus, pulling
-              off awesome events and workshops and, most importantly, prospering your professional skills.<br />
-              <br />
-              In the world of social media influencers, be a campus ambassador to show off your digital savviness! <br />
-              <br />
+        <div className="w-full max-w-[1080px] mx-auto sm:flex sm:flex-col lg:flex-row justify-between items-center">
+          <div className="space-y-6 text-center sm:text-left">
+            <h1 className="text-4xl font-serif sm:text-4xl font-bold text-[40px] text-white leading-tight">Campus Ambassador Program</h1>
+            <div className="w-10 h-1 bg-green-300 mx-auto sm:mx-0"></div>
+            <p className="text-base sm:text-xl text-white shadow-xl">
+              Be our mascot for AXIS, the largest technical <br></br> fest by VNIT NAGPUR in your college and <br></br>city, by joining AXIS's campus ambassador<br></br> program.<br /><br />
+              Seize the opportunity of becoming our face,<br></br> gaining exposure, connecting with peers<br></br> on your campus, pulling off awesome events<br></br> and workshops and, most importantly,<br></br> prospering your professional skills.<br /><br />
+              In the world of social media influencers,<br></br> be a campus ambassador to show off<br></br> your digital savviness!<br /><br />
             </p>
-            {/* <button className="bg-lightBlue text-white  py-[14px] px-[18px] rounded-md font-mullish font-bold
-    hover:bg-lightBlue500 transition-all duration-200">Register Now!</button> */}
-    <a href="/signup">
-    <button href="/signup" className ="underline bg-red-600 text-white py-2 px-3 md:px-4 rounded-md text-xs lg:text-xl font-mullish font-bold transition-all duration-200 hover:bg-green-900">Register Now!</button>
-
-    {/* <button href="/signup" className ="underline bg-red-600 text-white py-3 px-4 rounded-md font-mullish font-bold transition-all duration-200 hover:bg-green-900">Register Now!</button> */}
-         </a>
-         
+            <button className="bg-blue-600 text-white py-4 px-6 sm:py-2 sm:px-8 rounded-md font-semibold hover:bg-emerald-500 transition-all duration-200">
+              Register Now!
+            </button>
           </div>
-          {/* right part */}
-          <img src={AxisLogo} alt="" className="float-right w-0 lg:w-1/2" />
+          <img
+            src={AxisLogo}
+            alt="Axis Logo"
+            className="w-full sm:w-1/2 mt-8 sm:mt-0 hidden sm:block" // Use "hidden sm:block" to hide on small screens
+          />
         </div>
       </section>
     </div>
-    // </div>
   );
 };
 

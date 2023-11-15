@@ -1,34 +1,32 @@
 // Home.js
 import React from 'react';
-// import React, { useEffect } from 'react';
 import './h.css';
 
-// import { useLocation } from 'react-router-dom';
 import HeroSection from '../HeroSection/HeroSection';
-import Abam from '../Ab-aim/Ab-aim';
-import Sponsers from '../Sponsers/sponsers';
+// import Sponsers from '../Sponsers/sponsers';
 import FAQs from '../FAQs/FAQs';
-import Timeline from '../Timeline/Timeline';
+// import Timeline from '../Timeline/Timeline';
 import Respo from '../Respo/Respo';
-import CountUpAnimation from '../Count/Count'
-import Team from '../Team/team';
 import Responsibilites from '../Responsibilities/res';
+import Count from '../Count/Count';
+import Abaim from '../Ab-aim/Ab-aim';
+import Con from '../Contact/Contact';
+
 const Home = () => {
 
-
   return (
-    <div className=" home-container">
+    <div className="home-container">
       <div id="main" className="full-screen-vanta"></div>
       <div className="content-container">
         <HeroSection />
-        <CountUpAnimation />
-        <Respo  />
+        <Abaim/>
+        {/* <Sponsers/> */}
+        <Count/>
+        <Respo/>
         <Responsibilites/>
-        <Timeline  />
+        {/* <Timeline /> */}
         <FAQs />
-        <Sponsers />
-        <Abam  />
-        {/* <Team/> */}
+        <Con/>
       </div>
     </div>
   );

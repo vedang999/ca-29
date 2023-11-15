@@ -1,35 +1,33 @@
 import React from 'react';
-import "./aa.css";
 
 const AboutAim = () => {
   return (
-    
-    <div className="relative font-inter antialiased" id="abam">
-      <div className="overflow-x-hidden relative w-full bg-transparent p-0 sm:p-0 rounded-lg shadow-md sm:h-120">
-        <section className="relative">
-          <div className="aa-card-container lg:w-10/12 max-w-[1080px] flex flex-col sm:flex-row lg:flex-row justify-between items-center mx-auto ">
-            <div className="w-full sm:w-90 pr-4 bg-transparent">
-            <div className="space-y-2">
-              <h2 className="font-mullish font-bold lg:text-[28px] text-[16px] leading-1.2 text-white text-center underline">About Us</h2>
-              <div className="w-6 h-1 bg-greenLight mx-auto"></div>
-              <p className="font-mullish lg:text-[18px] text-[14px] leading-7 text-white opacity-70">
-                The Campus Ambassador Program is launched with the aim of developing an entrepreneurship culture in various colleges across the country. It is a Pan-India program for onboarding student ambassadors to not only publicize the events conducted by Axis VNIT but will also help them learn about entrepreneurship as a whole.
-              </p>
+    <div className="font-inter antialiased" id="abam">
+      <div className="p-4 lg:p-8 rounded-lg shadow-md">
+        <section className="max-w-6xl mx-auto">
+          <div className="flex flex-col-reverse lg:flex-row justify-between items-center">
+            <div className="w-full lg:w-1/2 pr-4 mb-4 lg:mb-0">
+              <div className="space-y-4">
+                <h2 className="font-bold text-2xl lg:text-3xl text-center text-white">About Us</h2>
+                <div className="w-6 h-1 bg-green-500 mx-auto"></div>
+                <p className="text-lg lg:text-xl text-center leading-6 lg:leading-7 text-white">
+                The AXIS'24 Campus Ambassador program is designed for students who wish to actively participate in and promote the AXIS'24 technical fest on their college campuses. The Campus Ambassador program is an excellent opportunity for students to actively engage with AXIS'24, gain valuable event management and promotion experience, and contribute to the success of the technical fest on their campus.
+                </p>
+              </div>
             </div>
-          </div>
-              <br/>
-          <div className="w-full sm:w-90 pl-4 bg-transparent">
-            <div className="space-y-2">
-              <h2 className="font-mullish font-bold lg:text-[28px] text-[16px] leading-1.2 text-white text-center underline">Our Aim</h2>
-              <div className="w-6 h-1 bg-greenLight mx-auto"></div>
-              <p className="font-mullish lg:text-[18px] text-[14px] leading-7 text-white opacity-70">
-                We aim to develop future leaders with an entrepreneurial mindset, well versed in various skills, including leadership, marketing, public speaking, business development, etc. With free seats in various events and lecture series given by various founders and CEOs, CAP aims at an all-around development as an individual.
-              </p>
+            <div className="w-full lg:w-1/2 pr-4 mb-4 lg:mb-0">
+              <div className="space-y-4">
+                <h2 className="font-bold text-2xl lg:text-3xl text-center text-white">AIM</h2>
+                <div className="w-6 h-1 bg-green-500 mx-auto"></div>
+                <p className="text-lg lg:text-xl leading-6 text-center lg:leading-7 text-white">
+                Our College Ambassador Program seeks to ignite a passion for leadership, innovation, and community-building among students. Through mentorship, networking, and hands-on experiences, we aim to nurture tomorrow's change-makers, providing a platform for them to amplify their voices, drive positive impact, and create lasting connections. Join us in shaping the future, one ambassador at a time.
+                </p>
+              </div>
             </div>
+           
           </div>
-        </div>
-      </section>
-    </div>
+        </section>
+      </div>
     </div>
   );
 };

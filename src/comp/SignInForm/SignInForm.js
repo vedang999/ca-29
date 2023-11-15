@@ -3,44 +3,47 @@ import './Si.css';
 import AxisLogo from './Axis.png';
 import React from 'react';
 
-const SignInForm = () => {
+const myFunction = () => {
+
   return (
     <div className="si-container">
-      <div id="main1" className="full-screen-vanta"></div>
+      <div id="main2" className="full-screen-vanta"></div>
       <div className="content-container">
     <main className="w-full h-screen flex flex-col items-center justify-center px-4">
-      <div className="max-w-sm w-full text-gray-600 space-y-5">
+      <div className="max-w-sm w-full p-8 border rounded-xl text-gray-600 space-y-5">
         <div className="text-center pb-1">
           <img
-          alt="College Logo"
-            src={AxisLogo}
+            src={AxisLogo} alt='Logo'
             width={220}
             className="mx-auto"
+            
           />
           <div className="mt-2">
-            <h3 className="text-gray-100 text-2xl font-bold sm:text-3xl">
+            <h3 className="text-white text-2xl font-bold sm:text-3xl">
               Log in to your account
             </h3>
           </div>
         </div>
         <form onSubmit={(e) => e.preventDefault()} className="space-y-5">
           <div>
-            <label className="text-gray-100 font-medium">Email</label>
+            <label className="font-medium text-white"><b>Email</b></label>
             <input
               type="email"
+              placeholder='abc@gmail.com'
               required
-              className="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
+              className="w-full mt-2 px-3 py-2 text-white bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
               />
           </div>
           <div>
-            <label className="text-gray-100 font-medium">Password</label>
+            <label className="font-medium text-white"><b>Password</b></label>
             <input
               type="password"
+              placeholder='********'
               required
-              className="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
+              className="w-full mt-2 px-3 py-2 text-white bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
             />
           </div>
-          <div className="text-gray-100 flex items-center justify-between text-sm">
+          <div className="flex items-center justify-between text-sm">
             <div className="flex items-center gap-x-3">
               <input
                 type="checkbox"
@@ -51,20 +54,20 @@ const SignInForm = () => {
                 htmlFor="remember-me-checkbox"
                 className="relative flex w-5 h-5 bg-white peer-checked:bg-indigo-600 rounded-md border ring-offset-2 ring-indigo-600 duration-150 peer-active:ring cursor-pointer after:absolute after:inset-x-0 after:top-[3px] after:m-auto after:w-1.5 after:h-2.5 after:border-r-2 after:border-b-2 after:border-white after:rotate-45"
                 ></label>
-              <span>Remember me</span>
+              <span className='text-white'>Remember me</span>
             </div>
             <a
-              href="/valid-url"
-              className="text-center text-indigo-600 hover:text-indigo-500"
+              href="/"
+              className="text-center text-teal-600 hover:text-indigo-500"
               >
               Forgot password?
             </a>
           </div>
-          <button className="w-full px-4 py-2 text-white font-medium bg-indigo-600 hover:bg-indigo-500 active:bg-indigo-600 rounded-lg duration-150">
-            Sign in
+          <button className="w-full px-4 py-2 text-white font-medium bg-indigo-600 hover:bg-green-600 active:bg-indigo-600 rounded-lg duration-150">
+           <b>Sign in</b> 
           </button>
         </form>
-        <button className="text-gray-400 w-full flex items-center justify-center gap-x-3 py-2.5 border rounded-lg text-sm font-medium hover:bg-gray-50 duration-150 active:bg-gray-100">
+        <button className="w-full flex items-center justify-center gap-x-3 py-2.5 border rounded-lg text-sm font-medium hover:bg-gray-50 duration-150  active:bg-white">
           <svg
             className="w-5 h-5"
             viewBox="0 0 48 48"
@@ -95,15 +98,15 @@ const SignInForm = () => {
               </clipPath>
             </defs>
           </svg>
-          Continue with Google
+         <b> Continue with Google</b>
         </button>
-        <p className="text-gray-100 text-center">
-          Don't have an account?{" "}
+        <p className="text-center flex items-center justify-around text-white">
+          Don't have an account?
           <a
-            href="/valid-url"
-            className="font-medium text-indigo-600 hover:text-indigo-500"
+            href="/"
+            className="font-medium text-teal-600 hover:text-indigo-500"
             >
-            Sign up
+           <b>Sign up!</b> 
           </a>
         </p>
       </div>
@@ -111,11 +114,6 @@ const SignInForm = () => {
     </div>
     </div>
   );
-  // Your component code here
 };
 
-export default SignInForm;
-
-// export default () => {
-
-// };
+export default myFunction;

@@ -1,19 +1,3 @@
-/* hero.css */
-/* body {
-  background-Color: #ffffff
-} */
-.full-screen-vanta1 {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 30vh;
-    z-index: +1;
-  }
-  .aa-card-container {
-    background: rgba(255,255,255,0);
-    -webkit-backdrop-filter: blur(1px);
-    backdrop-filter: blur(2px);
-    border: 1px solid rgba(255,255,255,0);
-  }
-  
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

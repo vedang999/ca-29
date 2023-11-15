@@ -1,9 +1,6 @@
-// App.js
-// import "./App.css";
 
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-// import Navbar from './comp/Navbar/Navbar';
 import { DefaultNavbar, SimplifiedNavbar } from './comp/Navbar/Navbar';
 import Home from './comp/Home/Home';
 import SignInForm from './comp/SignInForm/SignInForm';
@@ -45,4 +42,3 @@ const App = () => {
 };
 
 export default App;
-
