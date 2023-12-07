@@ -34,6 +34,13 @@ const TermsAndConditionsModal = ({ onClose }) => {
   );
 };
 const MyRegi = () => {
+  const [agreedToTerms, setAgreedToTerms] = useState(false);
+
+  const [cursorStyle, setCursorStyle] = useState('not-allowed');
+  const setAgreedToTermsAndCursor = (value) => {
+    setAgreedToTerms(value);
+    setCursorStyle(value ? 'pointer' : 'not-allowed');
+  };
   
   const [showTermsModal, setShowTermsModal] = useState(false);
 
@@ -79,6 +86,7 @@ const MyRegi = () => {
     try {
       const response = await axios.post('http://localhost:8080/api/register', formData);
       console.log(response.data); // Registration success message
+      // console.log(formData);
 
       // Redirect to the login page after successful registration
       navigate('/signin');
@@ -244,7 +252,7 @@ const MyRegi = () => {
                    <b>LinkedIN Profile (Optional)</b> 
                   </label>
                   <input
-                    type="link" name="linkedin" value={formData.linkedin} onChange={handleChange}
+                    type="text" name="linkedin" value={formData.linkedin} onChange={handleChange}
                     required
                     className="w-full mt-2 px-3 py-2 text-black active:bg-white outline-none border focus:border-gray-800 shadow-sm rounded-lg"
                   />
@@ -322,6 +330,8 @@ const MyRegi = () => {
                 type="checkbox"
                 id="remember-me-checkbox"
                 className="checkbox-item peer hidden"
+                onChange={() => setAgreedToTermsAndCursor(!agreedToTerms)}
+                checked={agreedToTerms}
               />
               <label
                 htmlFor="remember-me-checkbox"
@@ -332,7 +342,11 @@ const MyRegi = () => {
         <TermsAndConditionsModal onClose={handleCloseModal} />
       )}
             </div>
-                <button type="submit" className="w-full px-4 py-2 text-white font-medium bg-gray-800 hover:bg-green-700 active:bg-green-800 rounded-lg duration-150">
+                <button type="submit"
+                 className="w-full px-4 py-2 text-white font-medium hover:bg-green-700 active:bg-green-100 rounded-lg duration-150"
+                 disabled={!agreedToTerms}
+                 style={{ cursor: cursorStyle }}
+                 >
                   Submit
                 </button>
               </form>
