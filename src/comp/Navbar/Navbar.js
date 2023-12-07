@@ -38,11 +38,11 @@ const DefaultNavbar = () => {
                   Responsibilities
                 </HashLink>
               </li>
-              <li className="hover:text-blue-500">
+              {/* <li className="hover:text-blue-500">
                 <HashLink smooth to="#timeline">
                   Timeline
                 </HashLink>
-              </li>
+              </li> */}
               <li className="hover:text-blue-500">
                 <HashLink smooth to="#faqs">
                   FAQs
@@ -153,11 +153,11 @@ const DefaultNavbar = () => {
                   Responsibilities
                 </HashLink>
               </li>
-              <li className="hover:text-blue-500">
+              {/* <li className="hover:text-blue-500">
                 <HashLink smooth to="#timeline" className="py-2">
                   Timeline
                 </HashLink>
-              </li>
+              </li> */}
               <li className="hover:text-blue-500">
                 <HashLink smooth to="#faqs" className="py-2">
                   FAQs

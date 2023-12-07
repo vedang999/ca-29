@@ -99,7 +99,7 @@ const MyRegi = () => {
   return (
     <div className="reg-container">
         {errorMessage && <div className="alert alert-danger">{errorMessage}</div>} {/* Display error message */}
-      <div id="main2" className="full-screen-vanta"></div>
+      {/* <div id="main2" className="full-screen-vanta"></div> */}
       <div className="content-container">
         <main className="relative py-28">
           <div className="relative z-10 max-w-screen-xl mx-auto text-gray-600 sm:px-4 md:px-8">

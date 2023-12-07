@@ -16,7 +16,7 @@ const Home = () => {
 
   return (
     <div className="home-container">
-      <div id="main" className="full-screen-vanta"></div>
+      {/* <div id="main2" className="full-screen-vanta"></div> */}
       <div className="content-container">
         <HeroSection />
         <Abaim/>

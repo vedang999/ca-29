@@ -26,6 +26,8 @@ const App = () => {
 
   return (
     <div className="app-container">
+          <div id="main2" className="full-screen-vanta"></div>
+
       <Router>
         <div>
           {/* <Navbar /> */}

@@ -1,7 +1,7 @@
 import './Si.css';
 // import AxisLogo from './Axis-black.png';
 import AxisLogo from './Axis.png';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 
@@ -12,7 +12,13 @@ const MyFunction = () => {
   }); 
 
   const navigate = useNavigate();
-
+  // Use useEffect to fetch the user's data upon component mount
+  useEffect(() => {
+    const token = localStorage.getItem('auth-token');
+    if (token) {
+      navigate('/profile');
+    }
+  }, [navigate]);
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
@@ -36,7 +42,7 @@ const MyFunction = () => {
 
   return (
     <div className="si-container">
-      <div id="main2" className="full-screen-vanta"></div>
+      {/* <div id="main2" className="full-screen-vanta"></div> */}
       <div className="content-container">
     <main className="w-full h-screen flex flex-col items-center justify-center px-4">
       <div className="max-w-sm w-full p-8 border rounded-xl text-gray-600 space-y-5">
@@ -140,7 +146,7 @@ const MyFunction = () => {
         <p className="text-center flex items-center justify-around text-white">
           Don't have an account?
           <a
-            href="/"
+            href="/signup"
             className="font-medium text-teal-600 hover:text-indigo-500"
             >
            <b>Sign up!</b> 

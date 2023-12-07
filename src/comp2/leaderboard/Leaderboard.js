@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import './l.css';
 
 const Leaderboard = () => {
   const [leaderboardData, setLeaderboardData] = useState([]);
@@ -16,6 +17,9 @@ const Leaderboard = () => {
   }, []);
 
   return (
+    <div className="home-container">
+      
+    {/* <div id="main2" className="full-screen-vanta"></div> */}
     <div className="container mx-auto mt-8 p-8 bg-gray-100 rounded-md text-center">
       <h2 className="text-4xl font-semibold mb-6">Leaderboard</h2>
       <table className="mx-auto w-full bg-white border border-gray-300 shadow-md rounded-md">
@@ -37,6 +41,8 @@ const Leaderboard = () => {
         </tbody>
       </table>
     </div>
+    
+          </div>
   );
 };
 

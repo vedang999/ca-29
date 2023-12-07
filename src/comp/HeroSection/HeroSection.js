@@ -15,8 +15,11 @@ const HeroSection = () => {
               Seize the opportunity of becoming our face,<br></br> gaining exposure, connecting with peers<br></br> on your campus, pulling off awesome events<br></br> and workshops and, most importantly,<br></br> prospering your professional skills.<br /><br />
               In the world of social media influencers,<br></br> be a campus ambassador to show off<br></br> your digital savviness!<br /><br />
             </p>
-            <button className="bg-blue-600 text-white py-4 px-6 sm:py-2 sm:px-8 rounded-md font-semibold hover:bg-emerald-500 transition-all duration-200">
+            <button 
+            className="bg-blue-600 text-white py-4 px-6 sm:py-2 sm:px-8 rounded-md font-semibold hover:bg-emerald-500 transition-all duration-200">
+              <a href="/signup" >
               Register Now!
+              </a>
             </button>
           </div>
           <img

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
+import './l.css';
 
 const Profile = () => {
   const [user, setUser] = useState({});
@@ -50,20 +51,26 @@ const Profile = () => {
   }
 
   return (
-    <div className="container mt-5">
-      <h2>Profile</h2>
-      <div>
-        <p>Name: {user.name}</p>
-        <p>Email: {user.email}</p>
-        <p>College Name: {user.collegeName}</p>
-        <p>College State: {user.collegeState}</p>
-        <p>College City: {user.collegeCity}</p>
-        <p>Phone Number: {user.phoneNumber}</p>
-        <p>Points: {user.points}</p>
-        <button onClick={handleLogout} className="btn btn-danger">
-          Logout
-        </button>
-      </div>
+    <div className="home-container">
+    {/* <div id="main2" className="full-screen-vanta"></div> */}
+    <div className="container mt-5 mx-auto">
+  <div className="bg-white p-4 rounded-lg shadow-md">
+  <h2 className="text-2xl font-bold mb-4 text-center">Profile</h2>
+    <p className="mb-2"><span className="font-semibold">Name:</span> {user.name}</p>
+    <p className="mb-2"><span className="font-semibold">Email:</span> {user.email}</p>
+    <p className="mb-2"><span className="font-semibold">Points:</span> {user.points}</p>
+    <p className="mb-2"><span className="font-semibold">Phone Number:</span> {user.phoneNumber}</p>
+    <p className="mb-2"><span className="font-semibold">College</span> {user.collegeName}</p>
+    <p className="mb-2"><span className="font-semibold">City:</span> {user.collegeCity}</p>
+    <p className="mb-2"><span className="font-semibold">State:</span> {user.collegeState}</p>
+    <p className="mb-2"><span className="font-semibold">linkedin:</span> {user.linkedin}</p>
+    <p className="mb-2"><span className="font-semibold">address:</span> {user.address}</p>
+    <button onClick={handleLogout} className="bg-red-500 text-white px-4 py-2 rounded-md hover:bg-red-600 focus:outline-none focus:ring focus:border-blue-300">
+      Logout
+    </button>
+  </div>
+</div>
+
     </div>
   );
 };
