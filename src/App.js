@@ -5,6 +5,8 @@ import { DefaultNavbar, SimplifiedNavbar } from './comp/Navbar/Navbar';
 import Home from './comp/Home/Home';
 import SignInForm from './comp/SignInForm/SignInForm';
 import Footer from './comp/Footer/Footer';
+import Leaderboard from './comp2/leaderboard/Leaderboard';
+import Profile from './comp2/profile/Profile';
 import Registration from './comp/Registration/registration';
 
 const SignIn = () => (
@@ -32,7 +34,9 @@ const App = () => {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/signin" element={<SignIn />} />
+            <Route path="/profile" element={<Profile />} />
             <Route path="/signup" element={<SignUp />} />
+            <Route path="/leaderboard" element={<Leaderboard />} />
           </Routes>
           <Footer />
         </div>

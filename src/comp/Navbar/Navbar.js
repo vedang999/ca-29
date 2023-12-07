@@ -29,11 +29,6 @@ const DefaultNavbar = () => {
           <div className="hidden md:block">
             <ul className="flex space-x-10 text-white font-mullish font-medium">
               <li className="hover:text-blue-500">
-                <HashLink smooth to="#abam">
-                  About
-                </HashLink>
-              </li>
-              <li className="hover:text-blue-500">
                 <HashLink smooth to="#whats">
                   What's in it?
                 </HashLink>
@@ -57,6 +52,13 @@ const DefaultNavbar = () => {
                 <HashLink smooth to="#contact">
                   Contact us!
                 </HashLink>
+              </li>
+              <li className="hover:text-blue-500">
+              <a
+                  href="/leaderboard">
+                  Leader-board
+                  </a>
+                
               </li>
             </ul>
           </div>
@@ -142,11 +144,6 @@ const DefaultNavbar = () => {
           <div className="md:hidden text-gray-800 bg-gray-100 p-4 rounded-lg">
             <ul className="flex flex-col mt-2">
               <li className="hover:text-blue-500">
-                <HashLink smooth to="#abam" className="py-2">
-                  About
-                </HashLink>
-              </li>
-              <li className="hover:text-blue-500">
                 <HashLink smooth to="#whats" className="py-3">
                   What's in it?
                 </HashLink>
@@ -170,6 +167,12 @@ const DefaultNavbar = () => {
                 <HashLink smooth to="#contact" className="py-2">
                   Contact us!
                 </HashLink>
+              </li>
+              <li className="hover:text-blue-500">
+              <a
+                  href="/leaderboard">
+                  Leader-board
+                  </a>
               </li>
             </ul>
           </div>

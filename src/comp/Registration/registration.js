@@ -2,6 +2,8 @@ import "./regi.css";
 import AxisLogo from "./Axis.png";
 // import React from "react";
 import React, { useState } from 'react';
+import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 
 const termsAndConditionsText = `
 1. All proofs you submit should be genuinely authentic, reflecting your utmost knowledge and veracity.
@@ -43,8 +45,52 @@ const MyRegi = () => {
     setShowTermsModal(false);
   };
 
+
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    password: '',
+    confirmPassword: '',
+    collegeName: '',
+    collegeState: '',
+    collegeCity: '',
+    phoneNumber: '',
+    branch:'',
+    year:'',
+    linkedin:'',
+    posts:'',
+    address:'',
+    ideas:'',
+    why:'',
+    refral:'',
+  });
+
+  const [errorMessage, setErrorMessage] = useState(''); // State for error message
+
+  const navigate = useNavigate();
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const response = await axios.post('http://localhost:8080/api/register', formData);
+      console.log(response.data); // Registration success message
+
+      // Redirect to the login page after successful registration
+      navigate('/signin');
+    } catch (error) {
+      console.error(error.response.data); // Registration error message
+      setErrorMessage(error.response.data.message); // Set the error message state
+    }
+  };
+
   return (
     <div className="reg-container">
+        {errorMessage && <div className="alert alert-danger">{errorMessage}</div>} {/* Display error message */}
       <div id="main2" className="full-screen-vanta"></div>
       <div className="content-container">
         <main className="relative py-28">
@@ -64,34 +110,58 @@ const MyRegi = () => {
                 <div className=" backdrop-blur-sm h-full w-full border rounded-xl"></div>
               </div>
               <form
-                onSubmit={(e) => e.preventDefault()}
+                onSubmit={handleSubmit}
                 className="space-y-5 relative z-10"
               >
-                <div>
+                <div className="form-group">
                   <label className="font-medium">
                    <b> Full name</b> <span className=" text-red-800">*</span>
                   </label>
                   <input
-                    type="text"
+                    type="text" name="name" value={formData.name} onChange={handleChange}
                     placeholder="John Dee"
                     required
                     className="w-full mt-2 px-3 py-2 text-black active:bg-white outline-none border focus:border-gray-900 shadow-sm rounded-lg"
                   />
                 </div>
 
-                <div>
+                <div className="form-group">
                   <label className="font-medium">
                    <b> Email Address</b> <span className=" text-red-800">*</span>
                   </label>
                   <input
-                    type="email"
+                    type="email" name="email" value={formData.email} onChange={handleChange}
                     placeholder="abc@gmail.com"
                     required
                     className="w-full mt-2 px-3 py-2 text-black active:bg-white outline-none border focus:border-gray-800 shadow-sm rounded-lg"
                   />
                 </div>
 
-                <div>
+                <div className="form-group">
+                  <label className="font-medium">
+                    <b>Password:</b>
+                    <span className=" text-red-800">*</span>
+                  </label>
+                  <input
+                    type="password" name="password" value={formData.password} onChange={handleChange}
+                    required
+                    className="w-full mt-2 px-3 py-2 text-black active:bg-white outline-none border focus:border-gray-800 shadow-sm rounded-lg"
+                  />
+                </div>
+              
+                <div className="form-group">
+                  <label className="font-medium">
+                    <b>Confirm Password:</b>
+                    <span className=" text-red-800">*</span>
+                  </label>
+                  <input
+                    type="password" name="confirmPassword" value={formData.confirmPassword} onChange={handleChange}
+                    required
+                    className="w-full mt-2 px-3 py-2 text-black active:bg-white outline-none border focus:border-gray-800 shadow-sm rounded-lg"
+                  />
+                </div>
+
+                <div className="form-group">
                   <label className="font-medium">
                    <b> Phone number </b><span className=" text-red-800">*</span>
                   </label>
@@ -103,7 +173,7 @@ const MyRegi = () => {
                       </select>
                     </div>
                     <input
-                      type="number"
+                       type="tel" name="phoneNumber" value={formData.phoneNumber} onChange={handleChange}
                       placeholder="+1 (555) 000-000"
                       required
                       className="w-full pl-[4.5rem] pr-3 py-2 appearance-none active:bg-white outline-none border focus:border-gray-800 shadow-sm rounded-lg"
@@ -111,110 +181,136 @@ const MyRegi = () => {
                   </div>
                 </div>
 
-                <div>
+                <div className="form-group">
                   <label className="font-medium">
                     <b>University/Institution</b>
                     <span className=" text-red-800">*</span>
                   </label>
                   <input
-                    type="text"
+                    type="text" name="collegeName" value={formData.collegeName} onChange={handleChange}
                     required
                     className="w-full mt-2 px-3 py-2 text-black active:bg-white outline-none border focus:border-gray-800 shadow-sm rounded-lg"
                   />
                 </div>
 
-                <div>
+                <div className="form-group">
+                  <label className="font-medium">
+                    <b>College State:</b>
+                    <span className=" text-red-800">*</span>
+                  </label>
+                  <input
+                    type="text" name="collegeState" value={formData.collegeState} onChange={handleChange}
+                    required
+                    className="w-full mt-2 px-3 py-2 text-black active:bg-white outline-none border focus:border-gray-800 shadow-sm rounded-lg"
+                  />
+                </div>
+
+                <div className="form-group">
+                  <label className="font-medium">
+                    <b>College City:</b>
+                    <span className=" text-red-800">*</span>
+                  </label>
+                  <input
+                    type="text" name="collegeCity" value={formData.collegeCity} onChange={handleChange}
+                    required
+                    className="w-full mt-2 px-3 py-2 text-black active:bg-white outline-none border focus:border-gray-800 shadow-sm rounded-lg"
+                  />
+                </div>
+                <div className="form-group">
                   <label className="font-medium">
                    <b> Major/Field of Study</b>
                     <span className=" text-red-800">*</span>
                   </label>
                   <input
-                    type="text"
+                    type="text" name="branch" value={formData.branch} onChange={handleChange}
                     required
                     className="w-full mt-2 px-3 py-2 text-black active:bg-white outline-none border focus:border-gray-800 shadow-sm rounded-lg"
                   />
                 </div>
 
-                <div>
+                <div className="form-group">
                   <label className="font-medium">
                     <b>Year of Study</b> <span className=" text-red-800">*</span>
                   </label>
                   <input
-                    type="number"
+                    type="number" name="year" value={formData.year} onChange={handleChange}
                     required
                     className="w-full mt-2 px-3 py-2 text-black active:bg-white outline-none border focus:border-gray-800 shadow-sm rounded-lg"
                   />
                 </div>
 
-                <div>
+                <div className="form-group">
                   <label className="font-medium">
                    <b>LinkedIN Profile (Optional)</b> 
                   </label>
                   <input
-                    type="link"
+                    type="link" name="linkedin" value={formData.linkedin} onChange={handleChange}
                     required
                     className="w-full mt-2 px-3 py-2 text-black active:bg-white outline-none border focus:border-gray-800 shadow-sm rounded-lg"
                   />
                 </div>
 
-                <div>
+                <div className="form-group">
                   <label className="font-medium">
                    <b>Do you hold any post in college? If yes then Mention.</b> 
                     <span className=" text-red-800">*</span>
                   </label>
                   <input
-                    type="text"
+                    type="text" name="posts" value={formData.posts} onChange={handleChange}
                     required
                     className="w-full mt-2 px-3 py-2 text-black active:bg-white outline-none border focus:border-gray-800 shadow-sm rounded-lg"
                   />
                 </div>
 
-                <div>
+                <div className="form-group">
                   <label className="font-medium">
                    <b>Address of your residence where you can recieve courier from
                     AXIS </b> <span className=" text-red-800">*</span>
                   </label>
                   <textarea
+                    type="text" name="address" value={formData.address} onChange={handleChange}
                     required
                     className="w-full mt-2 h-36 px-3 text-black py-2 resize-none appearance-none active:bg-white outline-none border focus:border-gray-800 shadow-sm rounded-lg"
                   ></textarea>
                 </div>
 
-                <div>
+                <div className="form-group">
                   <label className="font-medium">
                    <b>Mention 3 innovative ideas to publicize AXIS'24 in your
                     college</b>  <span className=" text-red-800">*</span>
                   </label>
                   <textarea
+                  type="text" name="ideas" value={formData.ideas} onChange={handleChange}
                     required
                     className="w-full mt-2 h-36 px-3 text-black py-2 resize-none appearance-none active:bg-white outline-none border focus:border-gray-800 shadow-sm rounded-lg"
                   ></textarea>
                 </div>
 
-                <div>
+                <div className="form-group">
                   <label className="font-medium">
                    <b>Why do you want to become an Campus Ambassador?</b>
                     <span className=" text-red-800">*</span>
                   </label>
                   <textarea
+                  type="text" name="why" value={formData.why} onChange={handleChange}
                     required
                     className="w-full mt-2 h-36 text-black px-3 py-2 resize-none appearance-none active:bg-white outline-none border focus:border-gray-800 shadow-sm rounded-lg"
                   ></textarea>
                 </div>
 
-                <div>
+                {/* <div className="form-group">
                   <label className="font-medium"><b>Resume/CV (Optional)</b></label>
                   <input
                     type="file"
                     required
                     className="w-full mt-2 px-3 py-2 text-white active:bg-white outline-none border focus:border-gray-800 shadow-sm rounded-lg"
                   />
-                </div>
+                </div> */}
 
-                <div>
+                <div className="form-group">
                   <label className="font-medium"><b>REFERRAL CODE</b></label>
                   <input
-                    type="text"
+                    type="text" name="refral" value={formData.refral} onChange={handleChange}
                     placeholder="ABC-456-MNP"
                     required
                     className="w-full mt-2 px-3 py-2 text-black active:bg-white outline-none border focus:border-gray-800 shadow-sm rounded-lg"
@@ -236,7 +332,7 @@ const MyRegi = () => {
         <TermsAndConditionsModal onClose={handleCloseModal} />
       )}
             </div>
-                <button className="w-full px-4 py-2 text-white font-medium bg-gray-800 hover:bg-green-700 active:bg-green-800 rounded-lg duration-150">
+                <button type="submit" className="w-full px-4 py-2 text-white font-medium bg-gray-800 hover:bg-green-700 active:bg-green-800 rounded-lg duration-150">
                   Submit
                 </button>
               </form>
