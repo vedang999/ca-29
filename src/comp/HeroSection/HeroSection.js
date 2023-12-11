@@ -26,8 +26,8 @@ const Hero = () => {
             </h1>
             <p className="max-w-xl text-white mx-auto">
               Be our mascot for AXIS, the Largest Technical Fest by VNIT NAGPUR
-              in your college and city, bt joining AXIS's campus ambassador
-              program
+              in your college and city, by joining AXIS's Campus Ambassador
+              Program
             </p>
             <div className="flex items-center justify-center gap-x-3 font-medium text-sm">
             <NavLink
