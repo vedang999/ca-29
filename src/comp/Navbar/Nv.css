@@ -2,3 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
+.content{
+    z-index: 1;
+}

@@ -10,10 +10,10 @@ const termsAndConditionsText = `
 2. Certificates will be granted upon completing the tenure, signifying the individual's accomplished commitment.
 3. You are eligible for the certificate and other associated incentives only if your profile is complete.
 4. The Certificate as well as all incentives will be awarded only to candidates who meet the minimum points requirement.
-5. AXIS’24, VNIT Nagpur will send publicity materials to colleges but is not liable for any additional costs incurred by the CA.
-6. AXIS’24, VNIT Nagpur reserves the right to revoke your Ambassadorship or appoint additional ambassadors for unsatisfactory performance or violation of terms.
+5. AXIS'24, VNIT Nagpur will send publicity materials to colleges but is not liable for any additional costs incurred by the CA.
+6. AXIS'24, VNIT Nagpur reserves the right to revoke your Ambassadorship or appoint additional ambassadors for unsatisfactory performance or violation of terms.
 7. More than one Executive can be selected from a college depending upon the strength of the college.
-8. Any use, mention, or placement of AXIS’24 or VNIT Nagpur's logo or name (electronic or physical media) on any event, notice, advertisement, brochure, mailer, or branding material will be done only after written approval from AXIS’24 and VNIT Nagpur authorities and as per their norms. This policy applies in perpetuity.
+8. Any use, mention, or placement of AXIS'24 or VNIT Nagpur's logo or name (electronic or physical media) on any event, notice, advertisement, brochure, mailer, or branding material will be done only after written approval from AXIS’24 and VNIT Nagpur authorities and as per their norms. This policy applies in perpetuity.
 `;
 
 const TermsAndConditionsModal = ({ onClose }) => {
@@ -343,7 +343,7 @@ const MyRegi = () => {
       )}
             </div>
                 <button type="submit"
-                 className="w-full px-4 py-2 text-white font-medium hover:bg-green-700 active:bg-green-100 rounded-lg duration-150"
+                 className="w-full px-4 border py-2 text-white font-medium hover:bg-green-700 active:bg-green-100 rounded-lg duration-150"
                  disabled={!agreedToTerms}
                  style={{ cursor: cursorStyle }}
                  >

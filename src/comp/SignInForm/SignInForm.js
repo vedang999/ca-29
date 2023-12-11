@@ -104,7 +104,7 @@ const MyFunction = () => {
               {/* Forgot password? */}
             </a> 
           </div>
-          <button type="submit" className="w-full px-4 py-2 text-white font-medium bg-indigo-600 hover:bg-green-600 active:bg-indigo-600 rounded-lg duration-150">
+          <button type="submit" className="w-full border px-4 py-2 text-white font-medium bg-white hover:bg-green-600 rounded-lg duration-150">
            <b>Sign in</b> 
           </button>
           {/* <button type="submit" className="btn btn-primary">Login</button> */}
@@ -147,7 +147,7 @@ const MyFunction = () => {
           Don't have an account?
           <a
             href="/signup"
-            className="font-medium text-teal-600 hover:text-indigo-500"
+            className="font-medium text-white hover:text-green-600"
             >
            <b>Sign up!</b> 
           </a>

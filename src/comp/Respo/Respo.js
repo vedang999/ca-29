@@ -1,10 +1,10 @@
 import React from "react";
 import neto from "./networking (1).png";
 import goodies from "./goodies.png";
-import leader from "./leadership.png";
 import mentor from "./mentoring.png";
 import pass from "./ticket.png";
 import certificate from "./certificate.png";
+import mer from "./t-shirt-64.png"
 
 const whats = () => {
   return (
@@ -17,15 +17,16 @@ const whats = () => {
         </div>
 
         <div className="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-          <a
+        <a
             className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10"
             href="/"
           >
-            <img src={leader} alt=""/>
-            <h2 className="mt-4 text-xl font-bold text-white">Leadership</h2>
+            <img src={certificate} alt="" />
+
+            <h2 className="mt-4 text-xl font-bold text-white">Certificate</h2>
 
             <p className="mt-1 text-sm text-gray-300">
-Be a Leader and get opportunities to conduct events in your community.
+            Each ambassador would be getting certificates from AXIS, VNIT Nagpur based on performance.
             </p>
           </a>
 
@@ -36,11 +37,11 @@ Be a Leader and get opportunities to conduct events in your community.
             <img src={goodies} alt="" />
 
             <h2 className="mt-4 text-xl font-bold text-white">
-              E-Summit Goodies
+            Exciting Prizes 
             </h2>
 
             <p className="mt-1 text-sm text-gray-300">
-            Top 5 campus ambassadors will be given E-Summit goodies.
+            Top performing CA's will be given AXIS goodies.
             </p>
           </a>
 
@@ -79,11 +80,11 @@ Be a Leader and get opportunities to conduct events in your community.
             <img src={pass} alt="" />
 
             <h2 className="mt-4 text-xl font-bold text-white">
-              E-Summit'23 Passes
+            Access to the all the Workshop
             </h2>
 
             <p className="mt-1 text-sm text-gray-300">
-            Best performing CAs will get E-Summit 2024 passes and will be invited to the VNIT campus.
+            Best performing CAs will get AXIS 2024 passes and will be invited to the VNIT campus.
             </p>
           </a>
 
@@ -91,14 +92,18 @@ Be a Leader and get opportunities to conduct events in your community.
             className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10"
             href="/"
           >
-            <img src={certificate} alt="" />
+            <img src={mer} alt="" />
 
-            <h2 className="mt-4 text-xl font-bold text-white">Certificate</h2>
+            <h2 className="mt-4 text-xl font-bold text-white">
+            Merchandise
+            </h2>
 
             <p className="mt-1 text-sm text-gray-300">
-            Each ambassador would be getting certificates from AXIS VNIT Nagpur based on performance.
+            Best performing CA's will get EXCLUSIVE AXIS'24 Merchandise
             </p>
           </a>
+
+          
         </div>
       </div>
     </section>

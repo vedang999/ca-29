@@ -58,8 +58,8 @@ const CountUpAnimation = ({ title, target }) => {
 const CountUpGroup = () => {
   return (
     <div className="flex flex-col sm:flex-row justify-center sm:justify-evenly mt-4 sm:mt-8">
-      <CountUpAnimation title="COLLEGE AMBASSADORS" target={63} />
-      <CountUpAnimation title="INDIAN COLLEGES" target={64} />
+      <CountUpAnimation title="COLLEGE AMBASSADORS" target={100} />
+      <CountUpAnimation title="INDIAN COLLEGES" target={52} />
       {/* <CountUpAnimation title="INTERNATIONAL COLLEGES" target={68} /> */}
     </div>
   );

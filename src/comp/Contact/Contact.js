@@ -1,9 +1,9 @@
 import React from 'react';
-import Ph from './three-thoughtful.jpg';
+
 
 const ContactCard = ({ name, phoneNumber, email }) => {
   return (
-    <div className="p-4 rounded-lg bg-blue-50 hover:bg-transparent md:p-6 dark:bg-gray-800 transform hover:scale-105 transition-transform duration-300 ease-in-out" id="contact">
+    <div className="p-4 rounded-lg bg-transparent hover:bg-transparent md:p-6  transform hover:scale-125 transition-transform duration-300 ease-in-out" id="contact">
       <span className="inline-block p-3 text-blue-500 rounded-lg bg-blue-100/80 dark:bg-gray-700">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-5 h-5">
         
@@ -47,14 +47,9 @@ const Contact = () => {
           </p>
         </div>
 
-        <img
-          className="object-cover w-full h-60 mt-10 rounded-lg lg:h-96"
-          src={Ph}
-          alt=""
-          loading="lazy"
-        />
 
         <div className="grid grid-cols-1 lg:grid-cols-2 sm:grid-cols-2 gap-6 mt-10">
+        
           <ContactCard
             name="Rutvik Pathak"
             phoneNumber="+91 9284758387"
@@ -65,8 +60,10 @@ const Contact = () => {
             phoneNumber="+91 7276181260"
             email="sanskar.bhangdiya@axisvnit.in"
           />
+          </div>
+          
         </div>
-      </div>
+      
     </section>
   );
 };

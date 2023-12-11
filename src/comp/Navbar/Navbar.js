@@ -8,7 +8,7 @@ const DefaultNavbar = () => {
 
   return (
     // <nav id='nv' className="bg-black">
-    <nav className=" backdrop-blur-lg sticky">
+    <nav className="content backdrop-blur-lg sticky">
       <div className="block md:hidden">
         <br />
       </div>{" "}
@@ -28,6 +28,11 @@ const DefaultNavbar = () => {
 
           <div className="hidden md:block">
             <ul className="flex space-x-10 text-white font-mullish font-medium">
+              <li className="hover:text-blue-500">
+                <HashLink smooth to="#abam">
+                  About
+                </HashLink>
+              </li>
               <li className="hover:text-blue-500">
                 <HashLink smooth to="#whats">
                   What's in it?
@@ -49,16 +54,12 @@ const DefaultNavbar = () => {
                 </HashLink>
               </li>
               <li className="hover:text-blue-500">
+                <a href="/leaderboard">Leaderboard</a>
+              </li>
+              <li className="hover:text-blue-500">
                 <HashLink smooth to="#contact">
                   Contact us!
                 </HashLink>
-              </li>
-              <li className="hover:text-blue-500">
-              <a
-                  href="/leaderboard">
-                  Leader-board
-                  </a>
-                
               </li>
             </ul>
           </div>
@@ -73,24 +74,7 @@ const DefaultNavbar = () => {
                   Log in
                 </a>
               </li>
-              <li>
-                <a
-                  href="/signup"
-                  className="py-3 px-1 md:px-2 font-serif rounded-md text-base font-bold bg-white border transition-all duration-200 hover:text-blue-700 flex"
-                >
-                  Sign Up
-                  <svg
-                    viewBox="0 0 24 16"
-                    focusable="false"
-                    className="w-[17px] h-[16px] ml-3"
-                  >
-                    <path
-                      fill="currentColor"
-                      d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"
-                    ></path>
-                  </svg>
-                </a>
-              </li>
+              <li></li>
             </ul>
           </div>
 
@@ -101,12 +85,6 @@ const DefaultNavbar = () => {
                 className="block py-2 px-2 font-mullish rounded-md text-white border-blue-500 border text-base font-bold"
               >
                 Log in
-              </a>
-              <a
-                href="/signup"
-                className="block py-2 px-2 font-mullish rounded-md text-sm font-bold bg-white text-lightBlue300 border transition-all duration-200 hover:text-blue-500"
-              >
-                Sign Up
               </a>
             </div>
             <button
@@ -144,6 +122,11 @@ const DefaultNavbar = () => {
           <div className="md:hidden text-gray-800 bg-gray-100 p-4 rounded-lg">
             <ul className="flex flex-col mt-2">
               <li className="hover:text-blue-500">
+                <HashLink smooth to="#abam">
+                  About
+                </HashLink>
+              </li>
+              <li className="hover:text-blue-500">
                 <HashLink smooth to="#whats" className="py-3">
                   What's in it?
                 </HashLink>
@@ -164,15 +147,12 @@ const DefaultNavbar = () => {
                 </HashLink>
               </li>
               <li className="hover:text-blue-500">
+                <a href="/leaderboard">Leader-board</a>
+              </li>
+              <li className="hover:text-blue-500">
                 <HashLink smooth to="#contact" className="py-2">
                   Contact us!
                 </HashLink>
-              </li>
-              <li className="hover:text-blue-500">
-              <a
-                  href="/leaderboard">
-                  Leader-board
-                  </a>
               </li>
             </ul>
           </div>
@@ -217,24 +197,7 @@ const SimplifiedNavbar = () => {
                   Log in
                 </a>
               </li>
-              <li>
-                <a
-                  href="/signup"
-                  className="py-3 px-3 md:px-5 font-mullish rounded-xl text-sm font-bold bg-white border flex"
-                >
-                  Sign Up
-                  <svg
-                    viewBox="0 0 24 16"
-                    focusable="false"
-                    className="w-[17px] h-[16px] ml-3"
-                  >
-                    <path
-                      fill="currentColor"
-                      d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"
-                    ></path>
-                  </svg>
-                </a>
-              </li>
+              <li></li>
             </ul>
           </div>
 
@@ -245,12 +208,6 @@ const SimplifiedNavbar = () => {
                 className="block py-2 px-2 font-mono text-white border-blue-400 border rounded-md text-sm font-bold"
               >
                 Log in
-              </a>
-              <a
-                href="/signup"
-                className="block py-2 px-2 font-mullish rounded-md text-sm font-bold bg-white text-lightBlue300 border transition-all duration-200 hover:text-lightBlue500"
-              >
-                Sign Up
               </a>
             </div>
           </div>

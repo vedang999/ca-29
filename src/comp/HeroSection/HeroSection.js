@@ -1,36 +1,66 @@
-import React from 'react';
-import './h.css';
-import AxisLogo from './AXISSS WHITE.png';
+import React, { useState } from "react";
+import GradientWrapper from "../../comp/Gradient";
+import NavLink from "../Navlink/Navlink";
+import Ab from "../Ab-aim/Ab-aim";
 
-const HeroSection = () => {
+const Hero = () => {
+  const [showAbaim, setShowAbaim] = useState(false);
+
+  const handleLearnMoreClick = () => {
+    setShowAbaim((prevShowAbaim) => !prevShowAbaim);
+  };
+
   return (
-    <div className="overflow-x-hidden relative w-full">
-      <section className="relative">
-        <div className="w-full max-w-[1080px] mx-auto sm:flex sm:flex-col lg:flex-row justify-between items-center">
-          <div className="space-y-6 text-center sm:text-left">
-            <h1 className="text-4xl font-serif sm:text-4xl font-bold text-[40px] text-white leading-tight">Campus Ambassador Program</h1>
-            <div className="w-10 h-1 bg-green-300 mx-auto sm:mx-0"></div>
-            <p className="text-base sm:text-xl text-white shadow-xl">
-              Be our mascot for AXIS, the largest technical <br></br> fest by VNIT NAGPUR in your college and <br></br>city, by joining AXIS's campus ambassador<br></br> program.<br /><br />
-              Seize the opportunity of becoming our face,<br></br> gaining exposure, connecting with peers<br></br> on your campus, pulling off awesome events<br></br> and workshops and, most importantly,<br></br> prospering your professional skills.<br /><br />
-              In the world of social media influencers,<br></br> be a campus ambassador to show off<br></br> your digital savviness!<br /><br />
+    <div>
+      <section>
+        <GradientWrapper
+          wrapperClassName="inset-0"
+          className="custom-screen text-gray-600"
+        >
+          <div className="space-y-5 max-w-4xl mx-auto text-center">
+            <h1 className="text-4xl text-white font-extrabold mx-auto sm:text-6xl">
+              Campus Ambassador<br></br>{" "}
+              <span className=" bg-clip-text text-transparent bg-gradient-to-r from-[#9867F0] to-[#ED4E50]">
+                Program
+              </span>
+            </h1>
+            <p className="max-w-xl text-white mx-auto">
+              Be our mascot for AXIS, the Largest Technical Fest by VNIT NAGPUR
+              in your college and city, bt joining AXIS's campus ambassador
+              program
             </p>
-            <button 
-            className="bg-blue-600 text-white py-4 px-6 sm:py-2 sm:px-8 rounded-md font-semibold hover:bg-emerald-500 transition-all duration-200">
-              <a href="/signup" >
-              Register Now!
-              </a>
-            </button>
+            <div className="flex items-center justify-center gap-x-3 font-medium text-sm">
+              <NavLink
+                href="/signup"
+                className="flex items-center gap-x-2 text-white bg-blue-600 hover:bg-blue-500 active:bg-blue-700 "
+              >
+                Register
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  className="w-5 h-5"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+              </NavLink>
+              <button
+                onClick={handleLearnMoreClick}
+                className="bg-blue-600 rounded-2xl hover:bg-blue-700 text-white py-2 px-4"
+              >
+                {showAbaim ? "Show Less" : "Learn More..."}
+              </button>
+            </div>
+            {showAbaim && <Ab />}
           </div>
-          <img
-            src={AxisLogo}
-            alt="Axis Logo"
-            className="w-full sm:w-1/2 mt-8 sm:mt-0 hidden sm:block" // Use "hidden sm:block" to hide on small screens
-          />
-        </div>
+        </GradientWrapper>
       </section>
     </div>
   );
 };
 
-export default HeroSection;
+export default Hero;
