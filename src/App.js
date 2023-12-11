@@ -28,7 +28,7 @@ const App = () => {
 
   return (
     <div className="app-container">
-     <video autoPlay loop muted>
+     <video className="w-full h-full" autoPlay loop muted>
         <source src={Bgvid} type='video/mp4'/>
       </video>
 
