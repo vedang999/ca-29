@@ -69,7 +69,9 @@ const DefaultNavbar = () => {
               <li>
                 <a
                   href="/signin"
-                  className="py-3 px-3 md:px-5 font-mono text-white rounded-md text-base font-bold border border-blue-500 flex"
+                  // className="py-3 px-3 md:px-5 font-mono text-white rounded-md text-base font-bold border flex"
+                  className="py-3 px-3 md:px-5 font-mono text-white rounded-full text-base font-bold border-2 flex"
+
                 >
                   Log in
                 </a>
@@ -82,7 +84,7 @@ const DefaultNavbar = () => {
             <div className="flex flex-row space-x-6">
               <a
                 href="/signin"
-                className="block py-2 px-2 font-mullish rounded-md text-white border-blue-500 border text-base font-bold"
+                className="block py-2 px-2 font-mullish rounded-md text-white border text-base font-bold"
               >
                 Log in
               </a>
@@ -192,7 +194,7 @@ const SimplifiedNavbar = () => {
               <li>
                 <a
                   href="/signin"
-                  className="py-3 px-3 md:px-5 font-mono text-white border-blue-400  rounded-xl text-sm font-bold border flex"
+                  className="py-3 px-3 md:px-5 font-mono text-white  rounded-xl text-sm font-bold border flex"
                 >
                   Log in
                 </a>
@@ -205,7 +207,7 @@ const SimplifiedNavbar = () => {
             <div className="flex flex-row space-x-1">
               <a
                 href="/signin"
-                className="block py-2 px-2 font-mono text-white border-blue-400 border rounded-md text-sm font-bold"
+                className="block py-2 px-2 font-mono text-white  border rounded-md text-sm font-bold"
               >
                 Log in
               </a>

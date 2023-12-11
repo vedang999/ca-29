@@ -25,8 +25,15 @@ class="w-5 h-5"
       </span>
 
       <h2 className="mt-4 text-base font-medium text-gray-800 dark:text-white">{name}</h2>
-      <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">{phoneNumber}</p>
-      <p className="mt-2 text-sm text-blue-500 dark:text-blue-400">{email}</p>
+      {/* Add href with 'tel:' for phone number */}
+      <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">
+        <a href={`tel:${phoneNumber}`}>{phoneNumber}</a>
+      </p>
+
+      {/* Add href with 'mailto:' for email */}
+      <p className="mt-2 text-sm text-blue-500 dark:text-blue-400">
+        <a href={`mailto:${email}`}>{email}</a>
+      </p>
     </div>
   );
 };
