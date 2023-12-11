@@ -8,7 +8,7 @@ import Footer from './comp/Footer/Footer';
 import Leaderboard from './comp2/leaderboard/Leaderboard';
 import Profile from './comp2/profile/Profile';
 import Registration from './comp/Registration/registration';
-import Bgvid from './Vv.mp4';
+import Bgvid from './V108-7.mp4';
 import "./App.css"
 
 const SignIn = () => (
