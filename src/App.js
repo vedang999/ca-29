@@ -8,7 +8,7 @@ import Footer from './comp/Footer/Footer';
 import Leaderboard from './comp2/leaderboard/Leaderboard';
 import Profile from './comp2/profile/Profile';
 import Registration from './comp/Registration/registration';
-import Bgvid from './V.mp4';
+import Bgvid from './Vv.mp4';
 import "./App.css"
 
 const SignIn = () => (
@@ -28,7 +28,7 @@ const App = () => {
 
   return (
     <div className="app-container">
-     <video className="w-full h-full" autoPlay loop muted>
+     <video autoPlay loop muted>
         <source src={Bgvid} type='video/mp4'/>
       </video>
 

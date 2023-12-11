@@ -121,43 +121,44 @@ const DefaultNavbar = () => {
         </div>
 
         {isExpanded && (
-          <div className="md:hidden text-gray-800 bg-gray-100 p-4 rounded-lg">
-            <ul className="flex flex-col mt-2">
-              <li className="hover:text-blue-500">
-                <HashLink smooth to="#abam">
-                  About
-                </HashLink>
-              </li>
-              <li className="hover:text-blue-500">
-                <HashLink smooth to="#whats" className="py-3">
-                  What's in it?
-                </HashLink>
-              </li>
-              <li className="hover:text-blue-500">
-                <HashLink smooth to="#respo" className="py-2">
-                  Responsibilities
-                </HashLink>
-              </li>
-              {/* <li className="hover:text-blue-500">
-                <HashLink smooth to="#timeline" className="py-2">
-                  Timeline
-                </HashLink>
-              </li> */}
-              <li className="hover:text-blue-500">
-                <HashLink smooth to="#faqs" className="py-2">
-                  FAQs
-                </HashLink>
-              </li>
-              <li className="hover:text-blue-500">
-                <a href="/leaderboard">Leader-board</a>
-              </li>
-              <li className="hover:text-blue-500">
-                <HashLink smooth to="#contact" className="py-2">
-                  Contact us!
-                </HashLink>
-              </li>
-            </ul>
-          </div>
+          <div className="md:hidden text-white bg-gray-800 bg-opacity-25 p-4 rounded-lg">
+  <ul className="flex flex-col mt-2">
+    <li className="hover:text-blue-500">
+      <HashLink smooth to="#abam">
+        About11
+      </HashLink>
+    </li>
+    <li className="hover:text-blue-500">
+      <HashLink smooth to="#whats" className="py-3">
+        What's in it?
+      </HashLink>
+    </li>
+    <li className="hover:text-blue-500">
+      <HashLink smooth to="#respo" className="py-2">
+        Responsibilities
+      </HashLink>
+    </li>
+    {/* <li className="hover:text-blue-500">
+      <HashLink smooth to="#timeline" className="py-2">
+        Timeline
+      </HashLink>
+    </li> */}
+    <li className="hover:text-blue-500">
+      <HashLink smooth to="#faqs" className="py-2">
+        FAQs
+      </HashLink>
+    </li>
+    <li className="hover:text-blue-500">
+      <a href="/leaderboard">Leader-board</a>
+    </li>
+    <li className="hover:text-blue-500">
+      <HashLink smooth to="#contact" className="py-2">
+        Contact us!
+      </HashLink>
+    </li>
+  </ul>
+</div>
+
         )}
       </div>
     </nav>
